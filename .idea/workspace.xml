@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e61dcd1-1009-4533-984b-2a953a1f8200" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -27,16 +22,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="63" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -97,11 +82,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
               <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_navbar.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -145,7 +140,6 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170303231923_devise_create_users.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170303235809_add_username_to_users.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages.scss" />
         <option value="$PROJECT_DIR$/app/views/pages/profil.html.erb" />
@@ -160,6 +154,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
       </list>
     </option>
   </component>
@@ -258,6 +253,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bimahram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bimahram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -265,7 +278,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="routes&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/routes.rb&#10;app&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/application_controller.rb&#10;profil&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/pages/profil.html.erb&#10;pages&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/pages_controller.rb&#10;navbar&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;applica&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/application_controller.rb&#10;_nav&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;nav&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;migrate/&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/db/migrate&#10;user.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/models/user.rb&#10;deve&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/environments/development.rb&#10;application.html&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/application.html.erb&#10;development.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/environments/development.rb&#10;gem&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/Gemfile&#10;application.ht&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/application.html.erb&#10;routes.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/routes.rb&#10;database.yml&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/database.yml" />
+    <property name="SearchEverywhereHistoryKey" value="nav&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;routes&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/routes.rb&#10;app&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/application_controller.rb&#10;profil&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/pages/profil.html.erb&#10;pages&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/pages_controller.rb&#10;navbar&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;applica&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/application_controller.rb&#10;_nav&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;migrate/&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/db/migrate&#10;user.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/models/user.rb&#10;deve&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/environments/development.rb&#10;application.html&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/application.html.erb&#10;development.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/environments/development.rb&#10;gem&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/Gemfile&#10;application.ht&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/application.html.erb&#10;routes.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/routes.rb&#10;database.yml&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/database.yml" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -549,12 +562,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488581180847</updated>
-      <workItem from="1488581183796" duration="16608000" />
+      <workItem from="1488581183796" duration="19458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16608000" />
+    <option name="totallyTimeSpent" value="19458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="742" extended-state="1" />
@@ -686,14 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="51" lean-forward="false" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -802,6 +807,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding />
         </state>
       </provider>
