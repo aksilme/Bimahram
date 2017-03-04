@@ -24,6 +24,45 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+    <div class="field">
+      <%= f.label :genre %><br />
+      <%= select_tag(:genre, options_for_select([['homme', 1], ['femme', 2]])) %>
+
+    </div>
+
+    <div class="field">
+      <%= f.label :birthday %><br />
+      <%= f.date_field :birthday, autofocus: true %>
+    </div>
+    <div class="field">
+      <%= f.label :city %><br />
+      <%= select_tag(:city, options_for_select([['Lisbon', 1], ['Madrid', 2]])) %>
+
+    </div>
+    <div class="field">
+      <%= f.label :taille %><br />
+      <%= f.number_field :taille %>
+
+    </div>
+    <div class="field">
+      <%= f.label :poids %><br />
+      <%= f.number_field :poids %>
+
+    </div>
+
+    <div class="field">
+      <%= f.label :situation %><br />
+      <%= f.text_area :situation, autofocus: true  %>
+
+    </div>
+
+    <div class="field">
+      <%= f.label :annonce %><br />
+      <%= f.text_area :annonce,autofocus: true  %>
+
+    </div>
+
+
 
   <div class="actions">
     <%= f.submit "Sign up" %>
