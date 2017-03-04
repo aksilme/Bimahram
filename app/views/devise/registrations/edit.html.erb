@@ -1,4 +1,4 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<h2>Les paramètre du compte </h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
@@ -9,15 +9,15 @@
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+    <div>En attente de confirmation pour votre e-mail: <%= resource.unconfirmed_email %></div>
   <% end %>
 
   <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+    <%= f.label :password %> <i>(Laisser vide si vous ne voulez pas le changer)</i><br />
     <%= f.password_field :password, autocomplete: "off" %>
     <% if @minimum_password_length %>
       <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
+      <em><%= @minimum_password_length %> characteres minimum</em>
     <% end %>
   </div>
 
@@ -27,17 +27,55 @@
   </div>
 
   <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.label :current_password %> <i>(Nous avons besoin de votre mot de passe actuel pour confirmer vos modifications)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
+    <div class="field">
+      <%= f.label :genre %><br />
+      <%= select_tag(:genre, options_for_select([['homme', 1], ['femme', 2]])) %>
 
-  <div class="actions">
-    <%= f.submit "Update" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :birthday %><br />
+      <%= f.date_field :birthday, autofocus: true %>
+    </div>
+    <div class="field">
+      <%= f.label :city %><br />
+      <%= select_tag(:city, options_for_select([['Lisbon', 1], ['Madrid', 2]])) %>
+
+    </div>
+    <div class="field">
+      <%= f.label :taille %><br />
+      <%= f.number_field :taille %>
+
+    </div>
+    <div class="field">
+      <%= f.label :poids %><br />
+      <%= f.number_field :poids %>
+
+    </div>
+
+    <div class="field">
+      <%= f.label :situation %><br />
+      <%= f.text_area :situation, autofocus: true  %>
+
+    </div>
+
+    <div class="field">
+      <%= f.label :annonce %><br />
+      <%= f.text_area :annonce,autofocus: true  %>
+
+    </div>
+
+
+    <div class="actions">
+    <%= f.submit "Mettre à jour" %>
   </div>
 <% end %>
 
-<h3>Cancel my account</h3>
+<h3>Supprimer votre compte</h3>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<p>Déçu par le site? <%= button_to "Supprimer mon compte", registration_path(resource_name), data: { confirm: "Vous etes sure?" }, method: :delete %></p>
 
-<%= link_to "Back", :back %>
+<%= link_to "Retour en arrière", :back %>
