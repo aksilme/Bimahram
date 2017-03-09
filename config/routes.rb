@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   get 'users/show'
 
   devise_for :users
-  resources :users
+  resources :users do
+    resources :questions
+  end
+
   root 'pages#index'
 
   get 'pages/index'

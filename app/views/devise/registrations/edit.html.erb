@@ -4,7 +4,7 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email, "E-mail" %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
@@ -13,57 +13,57 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :password %> <i>(Laisser vide si vous ne voulez pas le changer)</i><br />
+    <%= f.label :password, "Mot de passe" %> <i>(Laisser vide si vous ne voulez pas le changer)</i><br />
     <%= f.password_field :password, autocomplete: "off" %>
     <% if @minimum_password_length %>
       <br />
-      <em><%= @minimum_password_length %> characteres minimum</em>
+      <em><%= @minimum_password_length %> charactères minimum</em>
     <% end %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :password_confirmation, "Confirmation mot de passe" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :current_password %> <i>(Nous avons besoin de votre mot de passe actuel pour confirmer vos modifications)</i><br />
+    <%= f.label :current_password, "Mot de passe actuel" %> <i>(Nous avons besoin de votre mot de passe actuel pour confirmer vos modifications)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
     <div class="field">
-      <%= f.label :genre %><br />
+      <%= f.label :genre, "Genre" %><br />
       <%= select_tag(:genre, options_for_select([['homme', 1], ['femme', 2]])) %>
 
     </div>
 
     <div class="field">
-      <%= f.label :birthday %><br />
+      <%= f.label :birthday, "Date de naissance" %><br />
       <%= f.date_field :birthday, autofocus: true %>
     </div>
     <div class="field">
-      <%= f.label :city %><br />
+      <%= f.label :city, "Ville" %><br />
       <%= select_tag(:city, options_for_select([['Lisbon', 1], ['Madrid', 2]])) %>
 
     </div>
     <div class="field">
-      <%= f.label :taille %><br />
+      <%= f.label :taille, "Taille" %><br />
       <%= f.number_field :taille %>
 
     </div>
     <div class="field">
-      <%= f.label :poids %><br />
+      <%= f.label :poids, "Poids" %><br />
       <%= f.number_field :poids %>
 
     </div>
 
     <div class="field">
-      <%= f.label :situation %><br />
+      <%= f.label :situation, "Votre Situation" %><br />
       <%= f.text_area :situation, autofocus: true  %>
 
     </div>
 
     <div class="field">
-      <%= f.label :annonce %><br />
+      <%= f.label :annonce, "Votre annonce" %><br />
       <%= f.text_area :annonce,autofocus: true  %>
 
     </div>

@@ -1,0 +1,60 @@
+<%= form_for @question do |f| %>
+    <% if @question.errors.any? %>
+        <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
+        <ul>
+          <% @post.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+          <% end %>
+        </ul>
+    <% end %>
+
+    <%= f.label :q1 %><br>
+    <%= f.text_field :q1 %>
+
+    <br>
+
+    <%= f.label :q2 %><br>
+    <%= f.text_field :q2 %>
+
+    <br>
+    <%= f.label :q3 %><br>
+    <%= f.text_field :q3 %>
+
+    <br>
+    <%= f.label :q4 %><br>
+    <%= f.text_field :q4 %>
+
+    <br>
+    <%= f.label :q5 %><br>
+    <%= f.text_field :q5 %>
+
+    <br>
+    <%= f.label :q6 %><br>
+    <%= f.text_field :q6 %>
+
+    <br>
+    <%= f.label :q7 %><br>
+    <%= f.text_field :q7 %>
+
+    <br>
+    <%= f.label :q8 %><br>
+    <%= f.text_field :q8 %>
+
+    <br>
+    <%= f.label :q9 %><br>
+    <%= f.text_field :q9 %>
+
+    <br>
+    <%= f.label :q10 %><br>
+    <%= f.text_field :q10 %>
+
+    <br>
+
+
+
+
+    <br>
+
+    <%= f.submit %>
+
+<% end %>

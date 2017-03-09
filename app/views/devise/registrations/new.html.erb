@@ -1,19 +1,19 @@
-<h2>Sign up</h2>
+<h2>Créer un compte</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
     <div class="field">
-      <%= f.label :username %><br />
+      <%= f.label :username, "Psuedonyme" %><br />
       <%= f.text_field :username, autofocus: true %>
     </div>
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email, "E-mail" %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label :password, "Mot de passe" %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
@@ -21,43 +21,43 @@
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :password_confirmation,"Confirmation mot de passe" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
     <div class="field">
-      <%= f.label :genre %><br />
+      <%= f.label :genre, "Genre" %><br />
       <%= select_tag(:genre, options_for_select([['homme', 1], ['femme', 2]])) %>
 
     </div>
 
     <div class="field">
-      <%= f.label :birthday %><br />
+      <%= f.label :birthday, "Date de naissance" %><br />
       <%= f.date_field :birthday, autofocus: true %>
     </div>
     <div class="field">
-      <%= f.label :city %><br />
+      <%= f.label :city, "Ville" %><br />
       <%= select_tag(:city, options_for_select([['Lisbon', 1], ['Madrid', 2]])) %>
 
     </div>
     <div class="field">
-      <%= f.label :taille %><br />
+      <%= f.label :taille, "Votre Taille"%><br />
       <%= f.number_field :taille %>
 
     </div>
     <div class="field">
-      <%= f.label :poids %><br />
+      <%= f.label :poids, "Votre poids" %><br />
       <%= f.number_field :poids %>
 
     </div>
 
     <div class="field">
-      <%= f.label :situation %><br />
+      <%= f.label :situation, "Décrivez votre sitautaion" %><br />
       <%= f.text_area :situation, autofocus: true  %>
 
     </div>
 
     <div class="field">
-      <%= f.label :annonce %><br />
+      <%= f.label  :annonce, "Votre annonce" %> (Mettre le plus de details possible)<br />
       <%= f.text_area :annonce,autofocus: true  %>
 
     </div>
@@ -65,7 +65,7 @@
 
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Créer un compte" %>
   </div>
 <% end %>
 
