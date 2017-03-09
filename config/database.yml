@@ -47,8 +47,13 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+#production:
+ # <<: *default
+  #database: bimahram_production
+  #username: bimahram
+  #password: <%= ENV['BIMAHRAM_DATABASE_PASSWORD']
 production:
-  <<: *default
-  database: bimahram_production
-  username: bimahram
-  password: <%= ENV['BIMAHRAM_DATABASE_PASSWORD'] %>
+      adapter: postgresql
+      database: my_database_production
+      pool: 5
+      timeout: 5000
