@@ -54,6 +54,5 @@ test:
   #password: <%= ENV['BIMAHRAM_DATABASE_PASSWORD']
 production:
       adapter: postgresql
-      database: bimaram_production
       pool: 5
       timeout: 5000
