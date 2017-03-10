@@ -1,81 +1,199 @@
-<h2>Les paramètre du compte </h2>
-
+<div class="container">
+  <h1 class="well" style="text-align: center">Modifier Mon Compte</h1>
+  <div class="col-lg-12 well">
+    <div class="row">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email, "E-mail" %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'Votre nouveau E-mail' %>
+              </div>
+
+              <div class="col-sm-6 form-group">
+
+                <%= f.text_field :username, autofocus: true, class: 'form-control', placeholder:'Votre Nouveau Pseudonyme' %>
+              </div>
+
+            </div>
+          </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>En attente de confirmation pour votre e-mail: <%= resource.unconfirmed_email %></div>
+    <div class="alert alert-info">En attente de confirmation pour votre e-mail: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :password, "Mot de passe" %> <i>(Laisser vide si vous ne voulez pas le changer)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> charactères minimum</em>
-    <% end %>
-  </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <p>Laisser vide si vous ne voulez pas changer</p>
+                <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder:'Votre nouveau mot de passe' %>
+                <% if @minimum_password_length %>
+                    <br />
+                    <em ><%= @minimum_password_length %> charactères minimum</em>
+                <% end %>
+              </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation mot de passe" %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+              <div class="col-sm-6 form-group">
+                <p>Laisser vide si vous ne voulez pas changer</p>
+                <%= f.password_field :password_confirmation, autocomplete: "off",class: 'form-control', placeholder:'Confirmer votre nouveau mot de passe' %>
 
-  <div class="field">
-    <%= f.label :current_password, "Mot de passe actuel" %> <i>(Nous avons besoin de votre mot de passe actuel pour confirmer vos modifications)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
-    <div class="field">
-      <%= f.label :genre, "Genre" %><br />
-      <%= select_tag(:genre, options_for_select([['homme', 1], ['femme', 2]])) %>
+              </div>
 
-    </div>
+            </div>
+          </div>
 
-    <div class="field">
-      <%= f.label :birthday, "Date de naissance" %><br />
-      <%= f.date_field :birthday, autofocus: true %>
-    </div>
-    <div class="field">
-      <%= f.label :city, "Ville" %><br />
-      <%= select_tag(:city, options_for_select([['Lisbon', 1], ['Madrid', 2]])) %>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <%= f.password_field :current_password, autocomplete: "off", class: 'form-control', placeholder: 'Votre mot de passe actuel' %>
 
-    </div>
-    <div class="field">
-      <%= f.label :taille, "Taille" %><br />
-      <%= f.number_field :taille %>
+              </div>
 
-    </div>
-    <div class="field">
-      <%= f.label :poids, "Poids" %><br />
-      <%= f.number_field :poids %>
+              <div class="col-sm-6 form-group">
 
-    </div>
+              </div>
 
-    <div class="field">
-      <%= f.label :situation, "Votre Situation" %><br />
-      <%= f.text_area :situation, autofocus: true  %>
-
-    </div>
-
-    <div class="field">
-      <%= f.label :annonce, "Votre annonce" %><br />
-      <%= f.text_area :annonce,autofocus: true  %>
-
-    </div>
+            </div>
+          </div>
 
 
-    <div class="actions">
-    <%= f.submit "Mettre à jour" %>
+
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <p>Votre Date de naissance</p>
+                <%= f.date_field :birthday, autofocus: true, class: 'form-control' %>
+
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <p>Votre Ville / pays</p>
+                <%= f.select(:city, options_for_select([['Paris', 1], ['Strasbourg', 2]]), {}, {class: "form-control"}) %>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <p>Votre Taille en CM</p>
+                <%= f.number_field :taille, class: 'form-control', placeholder:'ex: 170' %>
+
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <p>Votre poids en kg</p>
+                <%= f.number_field :poids, class: 'form-control', placeholder:'ex: 70' %>
+
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+          <h1 class="well" style="text-align: center">Question de Personalité</h1>
+
+          <!--Question du profil --------------------------------------->
+
+
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <b>Question 1: </b> <br>
+                <%= f.select(:q1, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <b>Question 2: </b> <br>
+                <%= f.select(:q2, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <b>Question 3: </b> <br>
+                <%= f.select(:q3, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <b>Question 4: </b> <br>
+                <%= f.select(:q4, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <b>Question 5: </b> <br>
+                <%= f.select(:q5, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <b>Question 6: </b> <br>
+                <%= f.select(:q6, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <b>Question 7: </b> <br>
+                <%= f.select(:q7, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <b>Question 8: </b> <br>
+                <%= f.select(:q8, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <b>Question 9: </b> <br>
+                <%= f.select(:q9, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <b>Question 10: </b> <br>
+                <%= f.select(:q10, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              </div>
+
+            </div>
+          </div>
+
+  <div class="col-sm-6 form-group">
+    <%= f.submit "Mettre à jour", class: 'btn btn-primary' %>
   </div>
 <% end %>
 
-<h3>Supprimer votre compte</h3>
+    </div>
+  </div>
+  <div class="well">
+    <h3>Supprimer votre compte</h3>
 
-<p>Déçu par le site? <%= button_to "Supprimer mon compte", registration_path(resource_name), data: { confirm: "Vous etes sure?" }, method: :delete %></p>
+    <p>Déçu par le site? <%= button_to "Supprimer mon compte", registration_path(resource_name), data: { confirm: "Vous etes sure?" }, method: :delete, class: 'btn btn-danger' %></p>
 
-<%= link_to "Retour en arrière", :back %>
+    <%= link_to "Retour en arrière", :back %>
+  </div>
+
+  <br>
+
+
+
