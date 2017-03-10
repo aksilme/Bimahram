@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'pages#index'
   get 'users/show'
 
   devise_for :users
@@ -6,12 +7,12 @@ Rails.application.routes.draw do
     resources :questions
   end
 
-  root 'pages#index'
+
 
   get 'pages/index'
   get 'user/:id' => "pages#profil"
   get 'pages/explore'
 
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
 end

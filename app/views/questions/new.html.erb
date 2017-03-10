@@ -1,14 +1,9 @@
-<%= form_for @question do |f| %>
-    <% if @question.errors.any? %>
-        <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving:</h2>
-        <ul>
-          <% @post.errors.full_messages.each do |msg| %>
-              <li><%= msg %></li>
-          <% end %>
-        </ul>
-    <% end %>
+<%= @question.inspect %>
 
-    <%= f.label :q1 %><br>
+<%= form_for :question do |f| %>
+
+
+    <%= f.label :q1, "Question 1" %><br>
     <%= f.text_field :q1 %>
 
     <br>

@@ -10,24 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170304142328) do
-
-  create_table "questions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "q1"
-    t.string   "q2"
-    t.string   "q3"
-    t.string   "q4"
-    t.string   "q5"
-    t.string   "q6"
-    t.string   "q7"
-    t.string   "q8"
-    t.string   "q9"
-    t.string   "q10"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_questions_on_user_id", using: :btree
-  end
+ActiveRecord::Schema.define(version: 20170310115556) do
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "email",                                default: "", null: false
@@ -54,10 +37,19 @@ ActiveRecord::Schema.define(version: 20170304142328) do
     t.integer  "poids"
     t.text     "situation",              limit: 65535
     t.text     "annonce",                limit: 65535
+    t.string   "q1"
+    t.string   "q2"
+    t.string   "q3"
+    t.string   "q4"
+    t.string   "q5"
+    t.string   "q6"
+    t.string   "q7"
+    t.string   "q8"
+    t.string   "q9"
+    t.string   "q10"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
     t.index ["username"], name: "index_users_on_username", unique: true, using: :btree
   end
 
-  add_foreign_key "questions", "users"
 end
