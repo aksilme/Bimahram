@@ -1,5 +1,139 @@
-<h1>nom :<%= @user.username %></h1>
-<h1>Taille: <%= @user.taille %></h1>
+<div class="mainbody container-fluid">
+  <div class="row">
+
+    <div style="padding-top:50px;"> </div>
+    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="media">
+            <div align="center">
+              <% if @user.genre == 'homme' %>
+              <img class="thumbnail img-responsive" src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" width="300px" height="300px">
+              <% else %>
+              <img class="thumbnail img-responsive" src="http://www.fancyicons.com/download/?id=3209&t=png&s=256" width="300px" height="300px">
+              <% end %>
+
+
+            </div>
+            <div class="media-body">
+              <hr>
+              <h3><strong>Situation</strong></h3>
+              <p>
+               <%= @user.situation  %>
+              </p>
+              <hr>
+              <h3><strong>Annonce</strong></h3>
+              <p><%= @user.annonce  %></p>
+              <hr>
+              <h3><strong>Trait  physique</strong></h3>
+              <b>Cheveux</b>
+              <p>Coleur :</p>
+              <p>Longueur :</p>
+              <p>Type :</p>
+              <b>Les yeux</b>
+              <p>Coleur: </p>
+              <hr>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+                    <span>
+                      <h1 class="panel-title pull-left" style="font-size:30px;"><%= @user.username %> <small></small> <% if @user.genre == 'homme' %> <i class="fa fa-user" ></i> <% else %> <i class="fa fa-female" aria-hidden="true" ></i><% end %></h1>
+                        <div class="dropdown pull-right">
+                            <button class="btn btn-success " type="button"  >
+                                Demander
+
+                            </button>
+
+                        </div>
+                    </span>
+          <br><br>
+
+          <br><br><hr>
+          <span class="pull-left">
+                        <a href="" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-home" aria-hidden="true"></i> Ville: <%= @user.city %></a>
+                        <a href="" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"></i> Age:  <%=   Date.today.year - @user.birthday.year %> ans</span></a>
+
+                        <a href="" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-arrows-v" aria-hidden="true"></i> Taille:  <%= @user.taille %> cm</a>
+                        <a href="" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-street-view" aria-hidden="true"></i> Poids:  <%= @user.poids %> kg</span></a>
+
+          </span>
+
+        </div>
+      </div>
+      <hr>
+      <!-- Simple post content example. -->
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="pull-left">
+
+          </div>
+          <h4><a href="#" style="text-decoration:none;"><strong>Question 1 : la question</strong></a>  <small><small><a href="#" style="text-decoration:none; color:grey;"><i></a></small></small></h4>
+          <span>
+                        <div class="navbar-right">
+                            <div class="dropdown">
+
+                                <ul class="dropdown-menu" aria-labelledby="dd1" style="float: right;">
+                                    <li><a href="#"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Report</a></li>
+                                    <li><a href="#"><i class="fa fa-fw fa-ban" aria-hidden="true"></i> Ignore</a></li>
+                                    <li><a href="#"><i class="fa fa-fw fa-bell" aria-hidden="true"></i> Enable notifications for this post</a></li>
+                                    <li><a href="#"><i class="fa fa-fw fa-eye-slash" aria-hidden="true"></i> Hide</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-fw fa-trash" aria-hidden="true"></i> Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </span>
+          <hr>
+          <div class="post-content">
+            <p>Simple post content example.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel gravida metus, non ultrices sapien. Morbi odio metus, dapibus non nibh id amet.</p>
+          </div>
+
+        </div>
+      </div>
+      <hr>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="pull-left">
+
+          </div>
+          <h4><a href="#" style="text-decoration:none;"><strong>Question 1 : la question</strong></a>  <small><small><a href="#" style="text-decoration:none; color:grey;"><i></a></small></small></h4>
+          <span>
+                        <div class="navbar-right">
+                            <div class="dropdown">
+
+                                <ul class="dropdown-menu" aria-labelledby="dd1" style="float: right;">
+                                    <li><a href="#"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Report</a></li>
+                                    <li><a href="#"><i class="fa fa-fw fa-ban" aria-hidden="true"></i> Ignore</a></li>
+                                    <li><a href="#"><i class="fa fa-fw fa-bell" aria-hidden="true"></i> Enable notifications for this post</a></li>
+                                    <li><a href="#"><i class="fa fa-fw fa-eye-slash" aria-hidden="true"></i> Hide</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-fw fa-trash" aria-hidden="true"></i> Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </span>
+          <hr>
+          <div class="post-content">
+            <p>Simple post content example.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel gravida metus, non ultrices sapien. Morbi odio metus, dapibus non nibh id amet.</p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
 <p></p>
 
 
