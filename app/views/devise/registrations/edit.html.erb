@@ -92,6 +92,55 @@
 
             </div>
           </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <p>Couleur des Yeux </p>
+                <%= f.select(:coleuryeux, options_for_select([['Noir', 1], ['Marron', 2], ['bleu', 3], ['vert', 4], ['noisette', 5]]), {}, {class: "form-control"}) %>
+
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <p>Couleur de cheveux </p>
+                <%= f.select(:colcheveu, options_for_select([['Noir', 1], ['brun', 2], ['auburn', 3], ['châtain', 4], ['roux', 5], ['blond', 6], ['blanc', 7]]), {}, {class: "form-control"}) %>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <p>Type de cheveux </p>
+                <%= f.select(:longcheveux, options_for_select([['raides', 1], ['ondulés', 2], ['bouclés', 3], ['crépus', 4]]), {}, {class: "form-control"}) %>
+
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <p>longueur de cheveux </p>
+
+                <%= f.select(:typecheveux, options_for_select([['court', 1], ['mi-long', 2], ['long', 3]]), {}, {class: "form-control"}) %>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <p>Votre situation <b>(Décrivez au maximum)</b></p>
+                <%= f.text_area :situation, autofocus: true, class: 'form-control'  %>
+              </div>
+
+              <div class="col-sm-6 form-group">
+                <p>Votre annonce </p>
+                <%= f.text_area :annonce, autofocus: true, class: 'form-control'  %>
+              </div>
+
+            </div>
+          </div>
+
 
 
 
@@ -179,7 +228,7 @@
           </div>
 
   <div class="col-sm-6 form-group">
-    <%= f.submit "Mettre à jour", class: 'btn btn-primary' %>
+    <%= f.submit "Mettre à jour" %>
   </div>
 <% end %>
 
