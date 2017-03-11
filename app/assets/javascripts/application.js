@@ -14,3 +14,24 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function () {
+    $('div#pourHomme').show();
+    $('div#pourFemme').hide();
+
+
+    $('#user_genre').on('change',
+        function(){
+            if ($('#user_genre').find('option:selected').val() !== "homme")
+            {
+
+                $('div#pourHomme').hide();
+                $('div#pourFemme').show();
+            }else{
+                $('div#pourHomme').show();
+                $('div#pourFemme').hide();
+            }
+
+        });
+});

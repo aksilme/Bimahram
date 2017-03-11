@@ -2,6 +2,7 @@
   <h1 class="well" style="text-align: center">Modifier Mon Compte</h1>
   <div class="col-lg-12 well">
     <div class="row">
+
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
@@ -44,6 +45,7 @@
           </div>
 
           <div class="col-sm-12">
+            <div class="alert alert-danger">Pour tout changements vous devez entrer votre mot de passe actuel</div>
             <div class="row">
               <div class="col-sm-6 form-group">
                 <%= f.password_field :current_password, autocomplete: "off", class: 'form-control', placeholder: 'Votre mot de passe actuel' %>
@@ -69,7 +71,18 @@
 
               <div class="col-sm-6 form-group">
                 <p>Votre Ville / pays</p>
-                <%= f.select(:city, options_for_select([['Paris', 1], ['Strasbourg', 2]]), {}, {class: "form-control"}) %>
+                <%= f.select(:city, options_for_select([['Alsace', 'Alsace'], ['Aquitaine', 'Aquitaine'],
+                                                        ['Auvergne', 'Auvergne'], ['Basse-Normandie', 'Basse-Normandie'],['Bourgogne', 'Bourgogne'],
+                                                        ['Bretagne', 'Bretagne'], ['Centre', 'Centre'],['Chapagne-Ardenne ', 'Chapagne-Ardenne'],
+                                                        ['Franche-Compté', 'Franche-Compté'], ['Haute-Normandie', 'Haute-Normandie'],['Ile-de-france', 'Ile-de-france'],
+                                                        ['Languedoc-Roussillon', 'Languedoc-Roussillon'], ['Limousin', 'Limousin'],['Lorraine', 'Lorraine'],
+                                                        ['Midi-pyrénées', 'Midi-pyrénées'], ['Nord-Pas-de-Calais', 'Nord-Pas-de-Calais'],['Pays de la loire', 'Pays de la loire'],
+                                                        ['Picardie', 'Picardie'], ['Poitou-Charentes', 'Poitou-Charentes'],['PACA', 'PACA'],
+                                                        ['Rhône-Alpes', 'Rhône-Alpes'], ['Allemagne', 'Allemagne'],['Angleterre', 'Angleterre'],
+                                                        ['Belgique', 'Belgique'], ['Canada', 'Canada'],['Espagne', 'Espagne'],
+                                                        ['Hollande', 'Hollande'], ['Italie', 'Italie'],['Luxembourg', 'Luxembourg'],
+                                                        ['Suisse', 'Suisse'], ['Algérie', 'Algérie'],['Maroc', 'Maroc'],['Tunisie', 'Tunisie']
+                                                       ]), {}, {class: "form-control"}) %>
 
               </div>
 
@@ -96,31 +109,30 @@
             <div class="row">
               <div class="col-sm-6 form-group">
                 <p>Couleur des Yeux </p>
-                <%= f.select(:coleuryeux, options_for_select([['Noir', 1], ['Marron', 2], ['bleu', 3], ['vert', 4], ['noisette', 5]]), {}, {class: "form-control"}) %>
+                <%= f.select(:coleuryeux, options_for_select([['Noir', 'noir'], ['Marron', 'marron'], ['Bleu', 'bleu'], ['Vert', 'vert'], ['Noisette', 'noisette']]), {}, {class: "form-control"}) %>
 
               </div>
 
               <div class="col-sm-6 form-group">
                 <p>Couleur de cheveux </p>
-                <%= f.select(:colcheveu, options_for_select([['Noir', 1], ['brun', 2], ['auburn', 3], ['châtain', 4], ['roux', 5], ['blond', 6], ['blanc', 7]]), {}, {class: "form-control"}) %>
+                <%= f.select(:colcheveu, options_for_select([['Noir', 'noir'], ['brun', 'brun'], ['auburn', 'aubrun'], ['châtain', 'chatain'], ['roux', 'roux'], ['blond', 'blond'], ['blanc', 'blanc']]), {}, {class: "form-control"}) %>
               </div>
 
 
             </div>
           </div>
-
           <div class="col-sm-12">
             <div class="row">
               <div class="col-sm-6 form-group">
                 <p>Type de cheveux </p>
-                <%= f.select(:longcheveux, options_for_select([['raides', 1], ['ondulés', 2], ['bouclés', 3], ['crépus', 4]]), {}, {class: "form-control"}) %>
+                <%= f.select(:longcheveux, options_for_select([['raides', 'raides'], ['ondulés', 'ondules'], ['bouclés', 'bouclés'], ['crépus', 'crepus']]), {}, {class: "form-control"}) %>
 
               </div>
 
               <div class="col-sm-6 form-group">
                 <p>longueur de cheveux </p>
 
-                <%= f.select(:typecheveux, options_for_select([['court', 1], ['mi-long', 2], ['long', 3]]), {}, {class: "form-control"}) %>
+                <%= f.select(:typecheveux, options_for_select([['court', 'court'], ['mi-long', 'milong'], ['long', 'long']]), {}, {class: "form-control"}) %>
               </div>
 
             </div>
@@ -153,13 +165,13 @@
           <div class="col-sm-12">
             <div class="row">
               <div class="col-sm-6 form-group">
-                <b>Question 1: </b> <br>
-                <%= f.select(:q1, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+                <b>Question 1: Comment qualifieriez-vous vos rapports avec vos parents, avec vos proches</b> <br>
+                <%= f.select(:q1, options_for_select([['Excellents', 'excellents'], ['respectueux sans plus', 'respectueux respectueux sans plus'],['pas bon', 'pas bon'], ['rompus contre ma volenté (déces,éloignement, conflit ou autres)', 'rompus contre ma volenté (déces,éloignement, conflit ou autres)']]), {}, {class: "form-control"}) %>
               </div>
 
               <div class="col-sm-6 form-group">
-                <b>Question 2: </b> <br>
-                <%= f.select(:q2, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+                <b>Question 2: Comment qualifieriez-vous votre pratique religieuse ?</b> <br><br>
+                <%= f.select(:q2, options_for_select([['Tres régulière ', 'tres régulière '], ['moyenne', 'moyenne'], ['faible à améliorer d’en devenir', 'faible à améliorer d’en devenir']]), {}, {class: "form-control"}) %>
               </div>
 
             </div>
@@ -168,29 +180,13 @@
           <div class="col-sm-12">
             <div class="row">
               <div class="col-sm-6 form-group">
-                <b>Question 3: </b> <br>
-                <%= f.select(:q3, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+                <b>Question 3: Comment qualifieriez-vous votre sitaution financière ? </b> <br>
+                <%= f.select(:q3, options_for_select([['Excellente et aisée', 'Excellente et aisée'], ['normale', 'normale'],  ['moyenne mais confortable', 'moyenne mais confortable'], ['difficile', 'difficile']]), {}, {class: "form-control"}) %>
               </div>
 
               <div class="col-sm-6 form-group">
-                <b>Question 4: </b> <br>
-                <%= f.select(:q4, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
-              </div>
-
-            </div>
-          </div>
-
-
-          <div class="col-sm-12">
-            <div class="row">
-              <div class="col-sm-6 form-group">
-                <b>Question 5: </b> <br>
-                <%= f.select(:q5, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
-              </div>
-
-              <div class="col-sm-6 form-group">
-                <b>Question 6: </b> <br>
-                <%= f.select(:q6, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+                <b>Question 4: de quelle origine paternelle etes-vous ? </b> <br>
+                <%= f.select(:q4, options_for_select([['Arabe moyen-orient', 'arabe et moyen orient'], ['maghrebine', 'maghrebine'],  ['africaine', 'africaine'], ['antillaise', 'antillaise'], ['européenne', 'européenne'], ['autres', 'autres']]), {}, {class: "form-control"}) %>
               </div>
 
             </div>
@@ -200,32 +196,35 @@
           <div class="col-sm-12">
             <div class="row">
               <div class="col-sm-6 form-group">
-                <b>Question 7: </b> <br>
-                <%= f.select(:q7, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+                <b>Question 5: quelle est votre situation matrimoniale? </b> <br><br>
+                <%= f.select(:q5, options_for_select([['célibataire jamais marié', 'célibataire jamais marié'], ['divorcé sans enfants', 'divorcé sans enfants'], ['divorcé avec enfant', 'divorcé avec enfant'], ['marié', 'marié']]), {}, {class: "form-control"}) %>
               </div>
-
-              <div class="col-sm-6 form-group">
-                <b>Question 8: </b> <br>
-                <%= f.select(:q8, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+            <% if current_user.genre == 'homme' %>
+              <div class="col-sm-6 form-group" id="pourHomme">
+                <b>Question 6: Comment qualifiriez vous votre aspect physiques ? (Pour les hommes uniquesments) </b> <br>
+                <%= f.select(:q6, options_for_select([['Tres athletique', 'tres athletique'], ['sportif', 'sportif'], ['moyen', 'moyen'], ['négligé mais peu mieux faire', 'négligé mais peu mieux faire']]), {}, {class: "form-control"}) %>
               </div>
+            <% end %>
 
             </div>
           </div>
+
 
           <div class="col-sm-12">
             <div class="row">
-              <div class="col-sm-6 form-group">
-                <b>Question 9: </b> <br>
-                <%= f.select(:q9, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+              <div class="col-sm-6 form-group" id="pourFemme">
+                <b>Question 7: comment qualifiriez vous votre aspect physiques ? (pour les femmes uniquement) </b> <br>
+                <%= f.select(:q7, options_for_select([['Jolie et attirante', 'Jolie et attirante'], ['jolie sans plus', 'jolie sans plus'], ['belle dans l\'âme', 'belle dans l\'âme'], ['belle pour lui', 'belle pour lui']]), {}, {class: "form-control"}) %>
               </div>
 
               <div class="col-sm-6 form-group">
-                <b>Question 10: </b> <br>
-                <%= f.select(:q10, options_for_select([['Homme', 1], ['Femme', 2]]), {}, {class: "form-control"}) %>
+                <b>Question 8: Comment qualifiriez vous votre vos connaissances en islam ? </b> <br><br>
+                <%= f.select(:q8, options_for_select([['Excellentes en progrés constants', 'Excellentes en progrés constants'], ['bonnes sans plus', 'bonnes sans plus'], ['pas assez bonnes', 'pas assez bonnes'], ['en devenir', 'en devenir']]), {}, {class: "form-control"}) %>
               </div>
 
             </div>
           </div>
+
 
   <div class="col-sm-6 form-group">
     <%= f.submit "Mettre à jour", class: 'btn btn-primary' %>

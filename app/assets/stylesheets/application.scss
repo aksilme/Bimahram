@@ -51,3 +51,53 @@
 .footer ul {
   font-size: 13px;
   list-style-type: none;}
+
+body {
+  background-color: #eee;
+}
+
+*[role="form"] {
+  max-width: 730px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+  margin-left: 5em;
+  margin-bottom: 1em;
+}
+
+
+/*flash*/
+.alert-error {
+  background-color: #f27571;
+  border-color: #eed3d7;
+  color: #000000;
+  text-align: left;
+}
+
+.alert-alert {
+  background-color: #f27571;
+  border-color: #000000;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-success {
+  background-color: #468847;
+  border-color: #d6e9c6;
+  color: #fffefd;
+  text-align: left;
+}
+
+.alert-notice {
+  background-color: #468847;
+  border-color: #d6e9c6;
+  color: #fffefd;
+  text-align: left;
+}
+
+
+

@@ -1,0 +1,9 @@
+<%= form_tag users_path, method: 'get' do  %>
+  <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "chercher", class: 'btn btn-default' %>
+<% end %>
+
+<% @users.each do |u| %>
+  <p><a href="<%= user_path(u) %>"><%= u.username %></a></p>
+<% end %>
+
