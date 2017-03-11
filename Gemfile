@@ -22,6 +22,9 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
+gem 'rails_admin_rollincode', '~> 1.0'
+gem 'rails_admin', '~> 1.1.1'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

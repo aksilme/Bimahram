@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/bimahramfr0641', as: 'rails_admin'
   root 'pages#index'
   get 'users/show'
 
