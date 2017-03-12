@@ -37,13 +37,13 @@
                 <div class="form-group">
                   <div class="col-md-6">
                     <label class="filter-col" style="margin-right:0;" for="pref-perpage">Age Minimum</label>
-                    <%= f.select :birthday_gteq, (18..99).to_a,{}, {class: "form-control"} %>
+                    <%= f.select :birthday_gteq, (18..99).to_a,{:selected => 18}, {class: "form-control"} %>
 
 
                   </div>
                   <div class="col-md-6">
                     <label class="filter-col" style="margin-right:0;" for="pref-perpage">Age Maximum</label>
-                    <%= f.select :birthday_lteq, (18..99).to_a,{}, {class: "form-control"} %>
+                    <%= f.select :birthday_lteq, (18..99).to_a,{:selected => 75}, {class: "form-control"} %>
                   </div>
 
                 </div>
@@ -58,7 +58,7 @@
                   </div>
                   <div class="col-md-6">
                     <label class="filter-col" style="margin-right:0;" for="pref-perpage">Taille Maximum (en cm)</label>
-                    <%= f.select :taille_lteq, (100..220).to_a,{}, {class: "form-control"} %>
+                    <%= f.select :taille_lteq, (100..220).to_a,{:selected => 190}, {class: "form-control"} %>
                   </div>
 
                 </div>
@@ -74,7 +74,7 @@
                   </div>
                   <div class="col-md-6">
                     <label class="filter-col" style="margin-right:0;" for="pref-perpage">Poids Maximum </label>
-                    <%= f.select :poids_lteq, (40..120).to_a,{}, {class: "form-control"} %>
+                    <%= f.select :poids_lteq, (40..120).to_a,{:selected => 90}, {class: "form-control"} %>
                   </div>
 
                 </div>
