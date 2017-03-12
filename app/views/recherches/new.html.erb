@@ -1,0 +1,51 @@
+<%= form_for @search, html:{ class: 'form-horizontal'}  do |s| %>
+
+    <div class="from-group">
+      <%= s.select(:genre, options_for_select([['Homme', 'homme'], ['Femme', 'femme']]), {}, {class: "form-control genre"}) %>
+    </div>
+
+    <div class="from-group">
+      <%= s.text_field :agemin, size:10, placeholder: 'Age maximum' %>
+    </div>
+
+      <div class="from-group">
+        <%= s.text_field :agemax, size:10, placeholder: 'Age maximum' %>
+      </div>
+
+    <div class="from-group">
+      <%= s.text_field :poidsmin, size:10, placeholder: 'Poids minimum' %>
+    </div>
+
+    <div class="from-group">
+      <%= s.text_field :poidsmax, size:10, placeholder: 'Poids maximum' %>
+    </div>
+
+    <div class="from-group">
+      <%= s.text_field :taillemin, size:10, placeholder: 'Taille maximum' %>
+    </div>
+
+    <div class="from-group">
+      <%= s.text_field :taillemax, size:10, placeholder: 'Taille maximum' %>
+    </div>
+
+    <%= s.select(:lieux, options_for_select([['Alsace', 'Alsace'], ['Aquitaine', 'Aquitaine'],
+                                             ['Auvergne', 'Auvergne'], ['Basse-Normandie', 'Basse-Normandie'],['Bourgogne', 'Bourgogne'],
+                                             ['Bretagne', 'Bretagne'], ['Centre', 'Centre'],['Chapagne-Ardenne ', 'Chapagne-Ardenne'],
+                                             ['Franche-Compté', 'Franche-Compté'], ['Haute-Normandie', 'Haute-Normandie'],['Ile-de-france', 'Ile-de-france'],
+                                             ['Languedoc-Roussillon', 'Languedoc-Roussillon'], ['Limousin', 'Limousin'],['Lorraine', 'Lorraine'],
+                                             ['Midi-pyrénées', 'Midi-pyrénées'], ['Nord-Pas-de-Calais', 'Nord-Pas-de-Calais'],['Pays de la loire', 'Pays de la loire'],
+                                             ['Picardie', 'Picardie'], ['Poitou-Charentes', 'Poitou-Charentes'],['PACA', 'PACA'],
+                                             ['Rhône-Alpes', 'Rhône-Alpes'], ['Allemagne', 'Allemagne'],['Angleterre', 'Angleterre'],
+                                             ['Belgique', 'Belgique'], ['Canada', 'Canada'],['Espagne', 'Espagne'],
+                                             ['Hollande', 'Hollande'], ['Italie', 'Italie'],['Luxembourg', 'Luxembourg'],
+                                             ['Suisse', 'Suisse'], ['Algérie', 'Algérie'],['Maroc', 'Maroc'],['Tunisie', 'Tunisie']
+
+
+                                            ]), {}, {class: "form-control genre"}) %>
+
+    <div class="from-group">
+      <%= s.submit "Recherche", class: 'btn btn-primary' %>
+    </div>
+
+
+<% end %>

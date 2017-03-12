@@ -24,6 +24,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'rails_admin_rollincode', '~> 1.0'
 gem 'rails_admin', '~> 1.1.1'
+gem 'ransack', github: 'activerecord-hackery/ransack'
+
 
 
 # Use jquery as the JavaScript library

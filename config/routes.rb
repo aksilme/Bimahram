@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
 
 
+
   get 'pages/index'
   get 'user/:id' => "pages#profil"
   get 'pages/explore'
