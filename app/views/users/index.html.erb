@@ -1,6 +1,7 @@
 <%= search_form_for @q do |f| %>
     <div class="row">
-      <div class="col-md-8 ">
+      <!-- formualaire de recherche -->
+      <div class="col-md-6 ">
        <div class="well"><h3 style="text-align: center">Formulaire de recherche</h3></div>
 
         <div id="filter-panel" class="filter-panel collapse in" style="height: auto;">
@@ -90,6 +91,43 @@
         </div>
 
 
+      <!-- resultat de recherche -->
+      <div class="row col-md-6 c custyle">
+        <div class="well"><h3 style="text-align: center">Resultat de recherche</h3></div>
+        <table class="table table-striped custab">
+          <thead>
+
+          <tr>
+            <th>Psuedo</th>
+            <th>Age</th>
+            <th>Lieu</th>
+            <th>Extrait de l'annonce</th>
+          </tr>
+          </thead>
+
+          <% @people.each do |u| %>
+              <tr>
+
+
+                  <td><a href="<%= user_path(u) %>"><%= u.username %></a></td>
+                  <td><%= u.birthday %></td>
+                  <td><%= u.city %></td>
+                  <td><%= u.annonce %></td>
+
+
+
+              </tr>
+
+
+
+          <% end %>
+
+
+
+        </table>
+      </div>
+
+
 
 
 
@@ -107,6 +145,3 @@
 <% end %>
 
 
-<% @people.each do |u| %>
-    <p><a href="<%= user_path(u) %>"><%= u.username %></a></p>
-<% end %>

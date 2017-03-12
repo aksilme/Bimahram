@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e61dcd1-1009-4533-984b-2a953a1f8200" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/recherches/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/recherches/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bimahram.iml" afterPath="$PROJECT_DIR$/.idea/bimahram.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -77,7 +69,17 @@
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="24" />
+              <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,20 +89,63 @@
         <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
-              <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+              <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
               <folding>
-                <element signature="e#114#140#0#HTML" expanded="true" />
-                <element signature="e#241#262#0#HTML" expanded="true" />
-                <element signature="e#483#506#0#HTML" expanded="true" />
-                <element signature="e#732#755#0#HTML" expanded="true" />
-                <element signature="e#1034#1057#0#HTML" expanded="true" />
-                <element signature="e#3033#3056#0#HTML" expanded="true" />
-                <element signature="e#3304#3327#0#HTML" expanded="true" />
-                <element signature="e#3639#3662#0#HTML" expanded="true" />
-                <element signature="e#3922#3945#0#HTML" expanded="true" />
-                <element signature="e#4268#4291#0#HTML" expanded="true" />
-                <element signature="e#4542#4565#0#HTML" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#1;n#div#4;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#1;n#div#5;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <marker date="1489280202291" expanded="false" signature="5092:5769" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_navbar.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-224">
+              <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,7 +178,6 @@
       <find>ques</find>
       <find>birthda</find>
       <find>yeux</find>
-      <find>city</find>
       <find>genre</find>
       <find>pour</find>
       <find>homme</find>
@@ -142,6 +186,10 @@
       <find>birt</find>
       <find>poids</find>
       <find>votre date</find>
+      <find>profi</find>
+      <find>city</find>
+      <find>add</find>
+      <find>fa fa-cc-visa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20170304134708_create_questions.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/views/questions/index.html.erb" />
@@ -180,12 +227,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20170310190853_add_apparences_to_user.rb" />
         <option value="$PROJECT_DIR$/config/locales/rails_admin.fr.yml" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" />
-        <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/recherches/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/recherche.rb" />
@@ -200,6 +243,11 @@
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20170311225602_change_birhday_to_integer_in_user.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
       </list>
     </option>
@@ -418,6 +466,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bimahram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bimahram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bimahram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bimahram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
@@ -426,7 +514,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/users/index.html.erb&#10;/mig&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/db/migrate&#10;edit&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/devise/registrations/edit.html.erb&#10;/migra&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/db/migrate&#10;show&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/users/show.html.erb&#10;user&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/users_controller.rb&#10;uer.rb&#9;FILE&#9;file:///opt/RubyMine-2016.3.2/rubystubs23/uncaught_throw_error.rb&#10;gemfi&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/Gemfile&#10;routes&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/routes.rb&#10;recherches&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/recherches_controller.rb&#10;/migrate&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/db/migrate&#10;footer&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_footer.html.erb&#10;FOOTE&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_footer.html.erb&#10;app&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/application.html.erb&#10;gem&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/Gemfile&#10;user.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/models/user.rb&#10;databa&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/database.yml&#10;route&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/routes.rb&#10;data&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/database.yml&#10;questions&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/questions_controller.rb&#10;nav&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;profil&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/pages/profil.html.erb&#10;pages&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/pages_controller.rb&#10;navbar&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;applica&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/application_controller.rb&#10;_nav&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;migrate/&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/db/migrate&#10;deve&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/environments/development.rb&#10;application.html&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/application.html.erb&#10;development.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/environments/development.rb&#10;application.ht&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/application.html.erb&#10;routes.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/routes.rb&#10;database.yml&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/database.yml" />
+    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/pages/index.html.erb&#10;_nav&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;/mig&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/db/migrate&#10;edit&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/devise/registrations/edit.html.erb&#10;/migra&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/db/migrate&#10;show&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/users/show.html.erb&#10;user&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/users_controller.rb&#10;uer.rb&#9;FILE&#9;file:///opt/RubyMine-2016.3.2/rubystubs23/uncaught_throw_error.rb&#10;gemfi&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/Gemfile&#10;routes&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/routes.rb&#10;recherches&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/recherches_controller.rb&#10;/migrate&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/db/migrate&#10;footer&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_footer.html.erb&#10;FOOTE&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_footer.html.erb&#10;app&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/application.html.erb&#10;gem&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/Gemfile&#10;user.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/models/user.rb&#10;databa&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/database.yml&#10;route&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/routes.rb&#10;data&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/database.yml&#10;questions&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/questions_controller.rb&#10;nav&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;profil&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/pages/profil.html.erb&#10;pages&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/pages_controller.rb&#10;navbar&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/_navbar.html.erb&#10;applica&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/controllers/application_controller.rb&#10;migrate/&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/db/migrate&#10;deve&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/environments/development.rb&#10;application.html&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/application.html.erb&#10;development.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/environments/development.rb&#10;application.ht&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/app/views/layouts/application.html.erb&#10;routes.rb&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/routes.rb&#10;database.yml&#9;FILE&#9;file:///home/koceila/Documents/Lab/Rails/bimahram/config/database.yml" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -649,18 +737,18 @@
       <workItem from="1489055099359" duration="5092000" />
       <workItem from="1489087703589" duration="11423000" />
       <workItem from="1489146366945" duration="40932000" />
-      <workItem from="1489250291798" duration="20847000" />
+      <workItem from="1489250291798" duration="23249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106891000" />
+    <option name="totallyTimeSpent" value="109293000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="742" extended-state="1" />
+    <frame x="-1" y="0" width="1368" height="742" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2685325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2677761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -709,7 +797,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/question.rb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20170310115214_drop_question.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -882,13 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170303231923_devise_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -910,28 +990,6 @@
         <state relative-caret-position="444">
           <caret line="48" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="241" lean-forward="false" selection-start-line="4" selection-start-column="241" selection-end-line="4" selection-end-column="241" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1067,14 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
@@ -1083,22 +1133,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224">
+          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
           <folding>
-            <element signature="e#114#140#0#HTML" expanded="true" />
-            <element signature="e#241#262#0#HTML" expanded="true" />
-            <element signature="e#483#506#0#HTML" expanded="true" />
-            <element signature="e#732#755#0#HTML" expanded="true" />
-            <element signature="e#1034#1057#0#HTML" expanded="true" />
-            <element signature="e#3033#3056#0#HTML" expanded="true" />
-            <element signature="e#3304#3327#0#HTML" expanded="true" />
-            <element signature="e#3639#3662#0#HTML" expanded="true" />
-            <element signature="e#3922#3945#0#HTML" expanded="true" />
-            <element signature="e#4268#4291#0#HTML" expanded="true" />
-            <element signature="e#4542#4565#0#HTML" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#1;n#div#4;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#1;n#div#5;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <marker date="1489280202291" expanded="false" signature="5092:5769" ph="..." />
           </folding>
         </state>
       </provider>
