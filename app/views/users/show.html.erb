@@ -8,7 +8,8 @@
           <div class="media">
             <div align="center">
               <% if @user.genre == 'homme' %>
-              <img class="thumbnail img-responsive" src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" width="300px" height="300px">
+                  <%= image_tag @user.image.thumb %>
+
               <% else %>
               <img class="thumbnail img-responsive" src="http://www.fancyicons.com/download/?id=3209&t=png&s=256" width="300px" height="300px">
               <% end %>

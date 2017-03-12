@@ -28,6 +28,7 @@ $(document).ready(function () {
 
                 $('div#pourHomme').hide();
                 $('div#pourFemme').show();
+
             }else{
                 $('div#pourHomme').show();
                 $('div#pourFemme').hide();

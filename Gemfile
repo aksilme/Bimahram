@@ -25,6 +25,8 @@ gem 'devise'
 gem 'rails_admin_rollincode', '~> 1.0'
 gem 'rails_admin', '~> 1.1.1'
 gem 'ransack', github: 'activerecord-hackery/ransack'
+gem 'carrierwave', '~> 1.0'
+gem "mini_magick"
 
 
 

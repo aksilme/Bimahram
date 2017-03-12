@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-
+mount_uploader :image, ImageUploader
 
 
   def self.search(search)
@@ -20,6 +20,7 @@ class User < ApplicationRecord
   validates_presence_of :email
   validates_presence_of :username
   validates_presence_of :birthday
+  validates_numericality_of :birthday
   validates_presence_of :city
 
 

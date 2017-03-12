@@ -3,7 +3,7 @@
   <div class="col-lg-12 well">
     <div class="row">
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+<%= form_for(resource, html: { multipart: true }, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
           <div class="col-sm-12">
@@ -152,6 +152,16 @@
 
             </div>
           </div>
+          <div class="col-sm-12" id="photoHomme">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <p>Photo de profil (extensions permises: jpg ,jpeg, png)</b></p>
+                <%= f.file_field :image,  class: 'form-control'  %>
+              </div>
+
+
+            </div>
+          </div>
 
 
 
@@ -212,10 +222,12 @@
 
           <div class="col-sm-12">
             <div class="row">
+              <% if current_user.genre == 'femme' %>
               <div class="col-sm-6 form-group" id="pourFemme">
                 <b>Question 7: comment qualifiriez vous votre aspect physiques ? (pour les femmes uniquement) </b> <br>
                 <%= f.select(:q7, options_for_select([['Jolie et attirante', 'Jolie et attirante'], ['jolie sans plus', 'jolie sans plus'], ['belle dans l\'âme', 'belle dans l\'âme'], ['belle pour lui', 'belle pour lui']]), {}, {class: "form-control"}) %>
               </div>
+              <% end %>
 
               <div class="col-sm-6 form-group">
                 <b>Question 8: Comment qualifiriez vous votre vos connaissances en islam ? </b> <br><br>
