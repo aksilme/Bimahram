@@ -17,6 +17,8 @@ mount_uploader :image, ImageUploader
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
+
+
   validates_presence_of :email
   validates_presence_of :username
   validates_presence_of :birthday

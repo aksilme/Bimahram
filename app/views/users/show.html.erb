@@ -45,13 +45,15 @@
         <div class="panel-body">
                     <span>
                       <h1 class="panel-title pull-left" style="font-size:30px;"><%= @user.username %> <small></small> <% if @user.genre == 'homme' %> <i class="fa fa-user" ></i> <% else %> <i class="fa fa-female" aria-hidden="true" ></i><% end %></h1>
-                        <div class="dropdown pull-right">
-                            <button class="btn btn-success " type="button"  >
-                                Demander
 
-                            </button>
+                      <div class="dropdown pull-right">
+
+                            <%= button_to "Contacter",  method: 'post', class: 'btn btn-primary', remote: true %>
+
+
 
                         </div>
+
                     </span>
           <br><br>
 
