@@ -8,10 +8,8 @@ class PagesController < ApplicationController
     else
       redirect_to root_path, notice: 'Aucun utilisateur correspendant'
     end
-
   end
 
   def explore
-
   end
 end

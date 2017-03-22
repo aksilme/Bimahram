@@ -16,7 +16,7 @@
 //= require_tree .
 
 
-$(document).ready(function () {
+$(document).ready('turbolinks:load', function () {
     $('div#pourHomme').show();
     $('div#pourFemme').hide();
 

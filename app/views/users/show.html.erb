@@ -1,15 +1,17 @@
 <div class="mainbody container-fluid">
+  <div class="col-md-8 col-md-offset-2">
+
+
   <div class="row">
 
     <div style="padding-top:50px;"> </div>
-    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+    <div class="col-md-5 ">
       <div class="panel panel-default">
         <div class="panel-body">
           <div class="media">
             <div align="center">
               <% if @user.genre == 'homme' %>
                   <%= image_tag @user.image.thumb %>
-
               <% else %>
               <img class="thumbnail img-responsive" src="http://www.fancyicons.com/download/?id=3209&t=png&s=256" width="300px" height="300px">
               <% end %>
@@ -34,25 +36,25 @@
               <b>Les yeux</b>
               <p>Coleur: <%= @user.coleuryeux %> </p>
               <hr>
+              <h3>Les demandes envoyé</h3>
+              <hr>
+              <h3>Match</h3>
+              <hr>
 
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+    <div class="col-md-7">
       <div class="panel panel-default">
         <div class="panel-body">
                     <span>
                       <h1 class="panel-title pull-left" style="font-size:30px;"><%= @user.username %> <small></small> <% if @user.genre == 'homme' %> <i class="fa fa-user" ></i> <% else %> <i class="fa fa-female" aria-hidden="true" ></i><% end %></h1>
 
                       <div class="dropdown pull-right">
-
-                            <%= button_to "Contacter",  method: 'post', class: 'btn btn-primary', remote: true %>
-
-
-
-                        </div>
+                          <%= link_to 'Demander', create_friendship_path(friend_id: @user.id), method: 'post', class: 'btn btn-primary'  %>
+                      </div>
 
                     </span>
           <br><br>
@@ -85,6 +87,9 @@
           <hr>
           <div class="post-content">
             <p><strong><%= @user.q1 %></strong></p>
+            <hr>
+            blalalalal
+
 
           </div>
 
@@ -243,10 +248,11 @@
 
     </div>
   </div>
+  </div>
 </div>
 
 
-<p></p>
+
 
 
 

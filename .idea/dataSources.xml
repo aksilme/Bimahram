@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="localhost:3307/bimahram_development" uuid="8fa5d128-6195-4098-89f6-1948775493ef">
+    <data-source source="LOCAL" name="bimahram_development@localhost" uuid="342b404e-4d1d-4ede-aaf8-15a970458c3a">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>localhost:3307/bimahram_development</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/bimahram_development</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

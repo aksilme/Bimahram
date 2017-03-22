@@ -14,6 +14,9 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "theme/style";
+@import "theme/style-responsive";
+
 
 .full {
   width: 100%;

@@ -9,14 +9,12 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  def follow
-    current_user.follow(@user)
-    @follow = Follow.find_by(follower: current_user, followable: @user)
+  def matches
+    @matches = current_user.friendships.where(state: "acceptée").map(&:friend) + current_user.inverse_friendships.where(state: "acceptée").map(&:user)
   end
 
-  def unfollow
-    current_user.stop_following(@user)
-    respond_to :js
-  end
+
+
+
 
 end

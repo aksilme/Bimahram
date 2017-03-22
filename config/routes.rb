@@ -5,18 +5,15 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :users do
-    get :follow
-    get :unfollow
+    member do
+      get 'matches'
+    end
   end
-
-
-
-
+  post   'create_friendship' => "friendships#create"
+  delete 'delete_friendship' => "friendships#destroy"
 
   get 'pages/index'
   get 'user/:id' => "pages#profil"
   get 'pages/explore'
-
-
 
 end
