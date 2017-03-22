@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e61dcd1-1009-4533-984b-2a953a1f8200" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/users_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -69,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_helper.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="users_helper.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -99,12 +98,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="55" column="80" lean-forward="false" selection-start-line="55" selection-start-column="80" selection-end-line="55" selection-end-column="80" />
-              <folding />
+            <state relative-caret-position="201">
+              <caret line="262" column="0" lean-forward="true" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#h4#0;n#section#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#1;n#section#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+                <marker date="1490225262851" expanded="false" signature="2975:3437" ph="..." />
+                <marker date="1490225262851" expanded="false" signature="3476:3939" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="6" column="108" lean-forward="false" selection-start-line="6" selection-start-column="108" selection-end-line="6" selection-end-column="108" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>friends</find>
-      <find>votre gen</find>
       <find>list-style-type: none;</find>
       <find>face</find>
       <find>ques</find>
@@ -142,7 +161,6 @@
       <find>fa fa-cc-visa</find>
       <find>add</find>
       <find>city</find>
-      <find>img</find>
       <find>image</find>
       <find>thumb</find>
       <find>parame</find>
@@ -153,6 +171,9 @@
       <find>friend</find>
       <find>demande</find>
       <find>dema</find>
+      <find>img</find>
+      <find>Administrator</find>
+      <find>avatar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,7 +206,6 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
@@ -210,8 +230,9 @@
         <option value="$PROJECT_DIR$/db/migrate/20170322140429_addfriended_at_to_friendship.rb" />
         <option value="$PROJECT_DIR$/app/models/friendship.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/users_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
       </list>
     </option>
   </component>
@@ -546,12 +567,12 @@
       <workItem from="1489779797657" duration="184000" />
       <workItem from="1489842278211" duration="2624000" />
       <workItem from="1490008678761" duration="24694000" />
-      <workItem from="1490183666387" duration="6421000" />
+      <workItem from="1490183666387" duration="11192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179165000" />
+    <option name="totallyTimeSpent" value="183936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,13 +726,6 @@
     <entry file="file://$PROJECT_DIR$/public/bootflat/css/site.css" />
     <entry file="file://$PROJECT_DIR$/app/models/follow.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20170313222037_create_friendships.rb" />
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -863,11 +877,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="55" column="80" lean-forward="false" selection-start-line="55" selection-start-column="80" selection-end-line="55" selection-end-column="80" />
-          <folding />
+        <state relative-caret-position="192">
+          <caret line="6" column="108" lean-forward="false" selection-start-line="6" selection-start-column="108" selection-end-line="6" selection-end-column="108" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -876,6 +892,24 @@
         <state relative-caret-position="288">
           <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="262" column="0" lean-forward="true" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h4#0;n#section#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#1;n#section#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <marker date="1490225262851" expanded="false" signature="2975:3437" ph="..." />
+            <marker date="1490225262851" expanded="false" signature="3476:3939" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

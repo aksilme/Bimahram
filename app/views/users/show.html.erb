@@ -1,255 +1,266 @@
-<div class="mainbody container-fluid">
-  <div class="col-md-8 col-md-offset-2">
-
-
+<section class="wrapper">
   <div class="row">
-
-    <div style="padding-top:50px;"> </div>
-    <div class="col-md-5 ">
-      <div class="panel panel-default">
+    <!-- profile-widget -->
+    <div class="col-lg-8 col-lg-offset-2">
+      <div class="profile-widget profile-widget-info">
         <div class="panel-body">
-          <div class="media">
-            <div align="center">
-              <% if @user.genre == 'homme' %>
+          <div class="col-lg-2 col-sm-2">
+            <h4><%= @user.username %></h4>
+
+            <div class="follow-ava">
+              <% if @user.genre == 'femme' %>
+              <img src="http://www.fancyicons.com/download/?id=3209&t=png&s=256" alt="">
+
+             <% else %>
                   <%= image_tag @user.image.thumb %>
-              <% else %>
-              <img class="thumbnail img-responsive" src="http://www.fancyicons.com/download/?id=3209&t=png&s=256" width="300px" height="300px">
-              <% end %>
+            <% end %>
 
 
             </div>
-            <div class="media-body">
-              <hr>
-              <h3><strong>Situation</strong></h3>
-              <p>
-               <%= @user.situation  %>
-              </p>
-              <hr>
-              <h3><strong>Annonce</strong></h3>
-              <p><%= @user.annonce  %></p>
-              <hr>
-              <h3><strong>Trait  physique</strong></h3>
-              <b>Cheveux</b>
-              <p>Coleur : <%= @user.colcheveu %></p>
-              <p>Longueur : <%= @user.longcheveux %></p>
-              <p>Type : <%= @user.typecheveux %></p>
-              <b>Les yeux</b>
-              <p>Coleur: <%= @user.coleuryeux %> </p>
-              <hr>
-              <h3>Les demandes</h3>
-              <hr>
-              <h3>Match</h3>
-              <hr>
+            <h6><%= @user.genre %></h6>
 
-            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4 follow-info">
+            <p></p>
+            <span class="fa fa-home"> <%= @user.city %></span>  <span class="fa fa-calendar"> <%= @user.birthday  %> ans</span>  <span class="fa fa-arrows-v"> Taille<%= @user.taille %> cm</span>  <span class="fa fa-street-view"> Poids: <%= @user.poids %> kg</span>
+            <h6>
+
+            </h6>
+          </div>
+          <div class="col-lg-6 col-sm-6 follow-info weather-category">
+            <ul>
+
+
+              <li>
+
+                <i class="icon_plus_alt2"></i> <a href="" class="btn btn-default"> <%= action_buttons(@user) %></a>
+
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-7">
-      <div class="panel panel-default">
+  </div>
+  <!-- page start-->
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <section class="panel">
+        <header class="panel-heading tab-bg-info">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#profile">
+                <i class="icon-user"></i>
+                Profile
+              </a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#recent-activity">
+                <i class="icon-home"></i>
+                Les reponses aux questions
+              </a>
+            </li>
+          <% if @user.genre == 'homme' %>
+            <li class="">
+              <a data-toggle="tab" href="#edit-profile">
+                <i class="icon-envelope"></i>
+                Voir les photos
+              </a>
+            </li>
+          <% end %>
+          </ul>
+        </header>
         <div class="panel-body">
-                    <span>
-                      <h1 class="panel-title pull-left" style="font-size:30px;"><%= @user.username %> <small></small> <% if @user.genre == 'homme' %> <i class="fa fa-user" ></i> <% else %> <i class="fa fa-female" aria-hidden="true" ></i><% end %></h1>
+          <div class="tab-content">
+            <div id="recent-activity" class="tab-pane">
+              <div class="profile-activity">
+                <div class="act-time">
+                  <div class="activity-body act-in">
+                    <span class="arrow"></span>
+                    <div class="text">
+                      <a href="#" class="activity-img"></a>
+                      <p class="attribution"><a href="#">Comment qualifieriez-vous vos rapports avec vos parents, avec vos proches ?
+                      </a></p>
+                      <p><%= @user.q1 %></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="act-time">
+                  <div class="activity-body act-in">
+                    <span class="arrow"></span>
+                    <div class="text">
+                      <a href="#" class="activity-img"></a>
+                      <p class="attribution"><a href="#">Comment qualifieriez-vous votre pratique religieuse ?
+                      </a></p>
+                      <p><%= @user.q2 %></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="act-time">
+                  <div class="activity-body act-in">
+                    <span class="arrow"></span>
+                    <div class="text">
+                      <a href="#" class="activity-img"></a>
+                      <p class="attribution"><a href="#">Comment qualifieriez-vous votre sitaution financière ?
+                      </a></p>
+                      <p><%= @user.q3 %></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="act-time">
+                  <div class="activity-body act-in">
+                    <span class="arrow"></span>
+                    <div class="text">
+                      <a href="#" class="activity-img"></a>
+                      <p class="attribution"><a href="#">de quelle origine paternelle etes-vous ?
+                      </a></p>
+                      <p><%= @user.q4 %></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="act-time">
+                  <div class="activity-body act-in">
+                    <span class="arrow"></span>
+                    <div class="text">
+                      <a href="#" class="activity-img"></a>
+                      <p class="attribution"><a href="#">quelle est votre situation matrimoniale
 
-                      <div class="dropdown pull-right">
-                          <a href="" class="btn btn-primary"><%= action_buttons(@user) %></a>
-                      </div>
 
-                    </span>
-          <br><br>
-
-          <br><br><hr>
-          <span class="pull-left">
-                        <a href="" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-home" aria-hidden="true"></i> Ville: <%= @user.city %></a>
-                        <a href="" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"></i> Age:  <%=  @user.birthday %> ans</span></a>
-
-                        <a href="" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-arrows-v" aria-hidden="true"></i> Taille:  <%= @user.taille %> cm</a>
-                        <a href="" class="btn btn-link" style="text-decoration:none;"><i class="fa fa-street-view" aria-hidden="true"></i> Poids:  <%= @user.poids %> kg</span></a>
-
-          </span>
-
-        </div>
-      </div>
-      <hr>
-      <!-- Simple post content example. -->
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="pull-left">
-
-          </div>
-          <h4><a href="#" style="text-decoration:none;">Comment qualifieriez-vous vos rapports avec vos parents, avec vos proches ?</a>  <small><small><a href="#" style="text-decoration:none; color:grey;"><i></a></small></small></h4>
-          <span>
-                        <div class="navbar-right">
-
-                        </div>
-                    </span>
-          <hr>
-          <div class="post-content">
-            <p><strong><%= @user.q1 %></strong></p>
-            <hr>
-            blalalalal
+                      </a></p>
+                      <p><%= @user.q5 %></p>
+                    </div>
+                  </div>
+                </div>
+                <% if @user.genre == 'homme' %>
+                    <div class="act-time">
+                  <div class="activity-body act-in">
+                    <span class="arrow"></span>
+                    <div class="text">
+                      <a href="#" class="activity-img"></a>
+                      <p class="attribution"><a href="#">Comment qualifiriez vous votre aspect physiques ?
 
 
-          </div>
+                      </a></p>
+                      <p><%= @user.q6 %></p>
+                    </div>
+                  </div>
+                </div>
+                <% else %>
 
-        </div>
-      </div>
-      <hr>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="pull-left">
+                <div class="act-time"> <!-- 7 -->
+                  <div class="activity-body act-in">
+                    <span class="arrow"></span>
+                    <div class="text">
+                      <a href="#" class="activity-img"></a>
+                      <p class="attribution"><a href="#">Comment qualifiriez vous votre aspect physiques ?
+                      </a></p>
+                      <p><%= @user.q7 %></p>
+                    </div>
+                  </div>
+                </div>
+                <% end %>
+                <div class="act-time">
+                  <div class="activity-body act-in">
+                    <span class="arrow"></span>
+                    <div class="text">
+                      <a href="#" class="activity-img"></a>
+                      <p class="attribution"><a href="#">,Comment qualifiriez vous votre vos connaissances en islam ?
+                      </a></p>
+                      <p><%= @user.q8 %></p>
+                    </div>
+                  </div>
+                </div>
 
-          </div>
-          <h4><a href="#" style="text-decoration:none;">Comment qualifieriez-vous votre pratique religieuse ?</a>  <small><small><a href="#" style="text-decoration:none; color:grey;"><i></a></small></small></h4>
-          <span>
-                        <div class="navbar-right">
 
-                        </div>
-                    </span>
-          <hr>
-          <div class="post-content">
-            <p><strong><%= @user.q2 %></strong></p>
 
-          </div>
 
-        </div>
-      </div>
-      <hr>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="pull-left">
 
-          </div>
-          <h4><a href="#" style="text-decoration:none;">Comment qualifieriez-vous votre sitaution financière ?</a>  <small><small><a href="#" style="text-decoration:none; color:grey;"><i></a></small></small></h4>
-          <span>
-                        <div class="navbar-right">
 
-                        </div>
-                    </span>
-          <hr>
-          <div class="post-content">
-            <p><strong><%= @user.q3 %></strong></p>
 
-          </div>
 
-        </div>
-      </div>
-      <hr>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="pull-left">
 
-          </div>
-          <h4><a href="#" style="text-decoration:none;">de quelle origine paternelle etes-vous ?</a>  <small><small><a href="#" style="text-decoration:none; color:grey;"><i></a></small></small></h4>
-          <span>
-                        <div class="navbar-right">
-
-                        </div>
-                    </span>
-          <hr>
-          <div class="post-content">
-            <p><strong><%= @user.q4 %></strong></p>
-
-          </div>
-
-        </div>
-      </div>
-      <hr>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="pull-left">
-
-          </div>
-          <h4><a href="#" style="text-decoration:none;">quelle est votre situation matrimoniale</a>  <small><small><a href="#" style="text-decoration:none; color:grey;"><i></a></small></small></h4>
-          <span>
-                        <div class="navbar-right">
-
-                        </div>
-                    </span>
-          <hr>
-          <div class="post-content">
-            <p><strong><%= @user.q5 %></strong></p>
-
-          </div>
-
-        </div>
-      </div>
-      <hr>
-        <% if @user.genre == 'homme' %>
-          <!-- POUR LES HOMMES -->
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="pull-left">
 
               </div>
-              <h4><a href="#" style="text-decoration:none;">Comment qualifiriez vous votre aspect physiques ?</a>  <small><small><a href="#" style="text-decoration:none; color:grey;"><i></a></small></small></h4>
-              <span>
-                            <div class="navbar-right">
+            </div>
+            <!-- profile -->
+            <div id="profile" class="tab-pane active">
+              <section class="panel">
+                <h4 style="text-align: center;">Annonce: </h4>
+                <div class="bio-graph-heading">
 
-                            </div>
-                        </span>
-              <hr>
-              <div class="post-content">
-                <p><strong><%= @user.q6 %></strong></p>
+                  <%= @user.annonce %>
+                </div>
 
-              </div>
+                <h4 style="text-align: center;">Situation: </h4>
+                <div class="bio-graph-heading">
+
+                  <%= @user.situation %>
+                </div>
+                <div class="panel-body bio-graph-info">
+                  <h1>Informations</h1>
+                  <div class="row">
+                    <div class="bio-row">
+                      <p><span>Pseudonyme:  </span>: <%= @user.username %></p>
+                    </div>
+                    <div class="bio-row">
+                      <p><span>Age </span>:  <%= @user.birthday %> ans</p>
+                    </div>
+                    <div class="bio-row">
+                      <p><span>Ville </span>:  <%= @user.city %></p>
+                    </div>
+                    <div class="bio-row">
+                      <p><span>Taille </span>:  <%= @user.taille %> cm</p>
+                    </div>
+                    <div class="bio-row">
+                      <p><span>Poids </span>:  <%= @user.poids %> kg</p>
+                    </div>
+                    <div class="bio-row">
+                      <p><span>Yeux </span>:  <%= @user.coleuryeux %></p>
+                    </div>
+                    <div class="bio-row">
+                      <p><span>Cheveux </span>:  <%= @user.colcheveu %> / <%= @user.typecheveux %> / <%= @user.longcheveux %></p>
+                    </div>
+                    <div class="bio-row">
+                      <p><span>Téléphone </span>:  0000000</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="row">
+                </div>
+              </section>
+            </div>
+            <!-- edit-profile -->
+            <div id="edit-profile" class="tab-pane">
 
             </div>
           </div>
-          <hr>
-        <% else %>
-          <!-- POUR LES FEMMES -->
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="pull-left">
-
-              </div>
-              <h4><a href="#" style="text-decoration:none;">comment qualifiriez vous votre aspect physiques ?</a>  <small><small><a href="#" style="text-decoration:none; color:grey;"><i></a></small></small></h4>
-              <span>
-                            <div class="navbar-right">
-
-                            </div>
-                        </span>
-              <hr>
-              <div class="post-content">
-                <p><strong><%= @user.q7 %></strong></p>
-
-              </div>
-
-            </div>
-          </div>
-         <hr>
-        <% end %>
-
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="pull-left">
-
-          </div>
-          <h4><a href="#" style="text-decoration:none;">,Comment qualifiriez vous votre vos connaissances en islam ?</a>  <small><small><a href="#" style="text-decoration:none; color:grey;"><i></a></small></small></h4>
-          <span>
-                        <div class="navbar-right">
-
-                        </div>
-                    </span>
-          <hr>
-          <div class="post-content">
-            <p><strong><%= @user.q8 %></strong></p>
-
-          </div>
-
         </div>
-      </div>
-      <hr>
-
-
-
-
+      </section>
     </div>
   </div>
-  </div>
-</div>
+
+  <!-- page end-->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
