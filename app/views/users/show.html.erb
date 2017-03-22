@@ -36,7 +36,7 @@
               <b>Les yeux</b>
               <p>Coleur: <%= @user.coleuryeux %> </p>
               <hr>
-              <h3>Les demandes envoyé</h3>
+              <h3>Les demandes</h3>
               <hr>
               <h3>Match</h3>
               <hr>
@@ -53,7 +53,7 @@
                       <h1 class="panel-title pull-left" style="font-size:30px;"><%= @user.username %> <small></small> <% if @user.genre == 'homme' %> <i class="fa fa-user" ></i> <% else %> <i class="fa fa-female" aria-hidden="true" ></i><% end %></h1>
 
                       <div class="dropdown pull-right">
-                          <%= link_to 'Demander', create_friendship_path(friend_id: @user.id), method: 'post', class: 'btn btn-primary'  %>
+                          <a href="" class="btn btn-primary"><%= action_buttons(@user) %></a>
                       </div>
 
                     </span>
