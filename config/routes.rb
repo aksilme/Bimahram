@@ -9,6 +9,11 @@ Rails.application.routes.draw do
       get 'matches'
     end
   end
+  resources :friendships, only: [:create, :destroy, :accept] do
+    member do
+      put :accept
+    end
+  end
   post   'create_friendship' => "friendships#create"
   delete 'delete_friendship' => "friendships#destroy"
 

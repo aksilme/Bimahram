@@ -20,6 +20,7 @@ cancel_user_registration GET    /users/cancel(.:format)           devise/registr
    new_user_confirmation GET    /users/confirmation/new(.:format) devise/confirmations#new
        user_confirmation GET    /users/confirmation(.:format)     devise/confirmations#show
                          POST   /users/confirmation(.:format)     devise/confirmations#create
+            matches_user GET    /users/:id/matches(.:format)      users#matches
                    users GET    /users(.:format)                  users#index
                          POST   /users(.:format)                  users#create
                 new_user GET    /users/new(.:format)              users#new
@@ -28,6 +29,8 @@ cancel_user_registration GET    /users/cancel(.:format)           devise/registr
                          PATCH  /users/:id(.:format)              users#update
                          PUT    /users/:id(.:format)              users#update
                          DELETE /users/:id(.:format)              users#destroy
+       create_friendship POST   /create_friendship(.:format)      friendships#create
+       delete_friendship DELETE /delete_friendship(.:format)      friendships#destroy
              pages_index GET    /pages/index(.:format)            pages#index
                          GET    /user/:id(.:format)               pages#profil
            pages_explore GET    /pages/explore(.:format)          pages#explore
