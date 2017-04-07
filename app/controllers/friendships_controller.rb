@@ -9,6 +9,7 @@ class FriendshipsController < ApplicationController
     respond_to do |format|
       format.html {redirect_to users_path, notice: "mise en relation crée"}
     end
+    FriendshipMailer.create_friendship(@user).deliver
   end
   ## supprimer
   def destroy
@@ -16,6 +17,7 @@ class FriendshipsController < ApplicationController
     respond_to do |format|
       format.html {redirect_to users_path, notice: "mise en relation supprimée"}
     end
+
   end
 
   def accept
@@ -23,6 +25,7 @@ class FriendshipsController < ApplicationController
     respond_to do |format|
       format.html {redirect_to users_path, notice: "demande acceptée"}
     end
+    FriendshipMailer.accept_friendship(@friendship.user).deliver
   end
   private
   def set_user
