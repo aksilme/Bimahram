@@ -1,6 +1,6 @@
 class AddDetailsToUser < ActiveRecord::Migration[5.0]
   def change
-    add_column :users, :birthday, :date
+    add_column :users, :birthday, :integer
     add_column :users, :city, :string
     add_column :users, :genre, :string
     add_column :users, :taille, :integer
