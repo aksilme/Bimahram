@@ -29,6 +29,7 @@ gem 'carrierwave', '~> 1.0'
 gem "mini_magick"
 gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
 gem "figaro"
+gem "fog-aws"
 
 
 

@@ -362,6 +362,30 @@
             <!-- edit-profile -->
             <div id="edit-profile" class="tab-pane">
 
+              <div class="row">
+                <div class="bio-row">
+                  <p>les photos</p>
+                  <% if  @user.album != nil%>
+                    <%=  image_tag @user.album.thumb %>
+                  <% end %>
+                  <% if  @user.album2 != nil%>
+                      <%=  image_tag @user.album2.thumb %>
+                  <% end %>
+                  <% if  @user.album3 != nil%>
+                      <%=  image_tag @user.album3.thumb %>
+                  <% end %>
+                  <% if  @user.album4 != nil%>
+                      <%=  image_tag @user.album4.thumb %>
+                  <% end %>
+                  <% if  @user.album5 != nil%>
+                      <%=  image_tag @user.album5.thumb %>
+                  <% end %>
+
+
+
+
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -4,6 +4,12 @@ has_many :friendships
 has_many :inverse_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
 
 mount_uploader :image, ImageUploader
+mount_uploader :album, AlbumUploader
+mount_uploader :album2, AlbumUploader
+mount_uploader :album3, AlbumUploader
+mount_uploader :album4, AlbumUploader
+mount_uploader :album5, AlbumUploader
+
    # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
