@@ -32,8 +32,8 @@
 
 
               <li>
-                <% if current_user %>
-                <i class="icon_plus_alt2"></i>  <%= action_buttons(@user) %>
+                <% if current_user && current_user.id != @user.id %>
+                 <i class="icon_plus_alt2"></i>  <%= action_buttons(@user) %>
                 <% end %>
 
               </li>
@@ -43,7 +43,134 @@
       </div>
     </div>
   </div>
-  <!-- page start-->
+
+  <!--- le suivis des demandes -->
+  <% if user_signed_in? && @user.id == current_user.id %>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <section class="panel">
+            <header class="panel-heading tab-bg-info">
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a data-toggle="tab" href="#relation">
+                    <i class="icon-user"></i>
+                    les mises en relations
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="tab" href="#envoye">
+                    <i class="icon-home"></i>
+                    les demandes reçues
+                  </a>
+                </li>
+
+                <li class="">
+                  <a data-toggle="tab" href="#en-attente">
+                    <i class="icon-envelope"></i>
+                   Les demandes en attente
+                  </a>
+                </li>
+
+              </ul>
+            </header>
+            <div class="panel-body">
+              <div class="tab-content">
+
+                <!-- profile -->
+                <div id="relation" class="tab-pane active">
+                  <section class="panel">
+
+
+
+                    <div class="panel-body bio-graph-info">
+
+                      <div class="row">
+
+                        <div class="bio-row">
+                          <% @user.active_friends.each do |rela| %>
+                          <h4 ><a href="/users/<%= rela.id %>"><%= rela.username %></a>
+                              <% if rela.genre == 'femme' %>
+                                <span>  numero du mahram : </span>
+                              <% end %>
+                          </h4>
+                          <% end %>
+
+
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </section>
+                  <section>
+                    <div class="row">
+                    </div>
+                  </section>
+                </div>
+
+                <div id="envoye" class="tab-pane ">
+                  <section class="panel">
+
+
+
+                    <div class="panel-body bio-graph-info">
+
+                      <div class="row">
+
+                        <div class="bio-row">
+                          <% @user.pending_friend_requests_from.map(&:user).each do |rela| %>
+                              <h4 ><a href="/users/<%= rela.id %>"><%= rela.username %></a></h4>
+                          <% end %>
+
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </section>
+                  <section>
+                    <div class="row">
+                    </div>
+                  </section>
+                </div>
+                <div id="en-attente" class="tab-pane ">
+                  <section class="panel">
+
+
+
+                    <div class="panel-body bio-graph-info">
+
+                      <div class="row">
+
+                        <div class="bio-row">
+                          <% @user.pending_friend_requests_to.map(&:friend).each do |rela| %>
+                              <h4 ><a href="/users/<%= rela.id %>"><%= rela.username %></a></h4>
+                          <% end %>
+
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </section>
+                  <section>
+                    <div class="row">
+                    </div>
+                  </section>
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+  <% end %>
+      <!--- fin suivis des demandes -->
+  <!-- profil debut-->
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
       <section class="panel">
@@ -242,7 +369,7 @@
     </div>
   </div>
 
-  <!-- page end-->
+  <!-- profil fin-->
 </section>
 
 
