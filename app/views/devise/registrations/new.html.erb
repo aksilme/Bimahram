@@ -91,6 +91,12 @@
 
             </div>
 
+            <div class="col-sm-6 form-group" id="pourFemme">
+              <p>numéro du Mahram (format international)</p>
+              <%= f.number_field :mahram, class: 'form-control', placeholder:'ex: 0033660616263 ' %>
+            </div>
+
+
             <div class="col-sm-6 form-group">
 
             </div>
@@ -223,6 +229,7 @@
               <b>Question 8: Comment qualifiriez vous votre vos connaissances en islam ? </b> <br><br>
               <%= f.select(:q8, options_for_select([['Excellentes en progrés constants', 'Excellentes en progrés constants'], ['bonnes sans plus', 'bonnes sans plus'], ['pas assez bonnes', 'pas assez bonnes'], ['en devenir', 'en devenir']]), {}, {class: "form-control"}) %>
             </div>
+
 
           </div>
         </div>

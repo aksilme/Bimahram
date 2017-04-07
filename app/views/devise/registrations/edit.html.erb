@@ -35,26 +35,39 @@
                 <% end %>
               </div>
 
+
               <div class="col-sm-6 form-group">
                 <p>Laisser vide si vous ne voulez pas changer</p>
                 <%= f.password_field :password_confirmation, autocomplete: "off",class: 'form-control', placeholder:'Confirmer votre nouveau mot de passe' %>
 
               </div>
 
+
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <div class="alert alert-danger">Pour tout changements vous devez entrer votre mot de passe actuel</div>
+              </div>
+
             </div>
           </div>
 
           <div class="col-sm-12">
-            <div class="alert alert-danger">Pour tout changements vous devez entrer votre mot de passe actuel</div>
+
             <div class="row">
               <div class="col-sm-6 form-group">
+                <p>votre mot de passe actuel</p>
                 <%= f.password_field :current_password, autocomplete: "off", class: 'form-control', placeholder: 'Votre mot de passe actuel' %>
 
               </div>
-
-              <div class="col-sm-6 form-group">
-
+              <% if current_user.genre == 'femme' %>
+              <div class="col-sm-6 form-group" id="pourFemme">
+                <p>numéro du Mahram (format international)</p>
+                <%= f.number_field :mahram, class: 'form-control', placeholder:'ex: 0033660616263 ' %>
               </div>
+              <% end %>
 
             </div>
           </div>

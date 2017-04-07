@@ -90,7 +90,7 @@
                           <% @user.active_friends.each do |rela| %>
                           <h4 ><a href="/users/<%= rela.id %>"><%= rela.username %></a>
                               <% if rela.genre == 'femme' %>
-                                <span>  numero du mahram : </span>
+                                <span>  numero du mahram : <%= rela.mahram %></span>
                               <% end %>
                           </h4>
                           <% end %>
@@ -349,7 +349,7 @@
                       <p><span>Cheveux </span>:  <%= @user.colcheveu %> / <%= @user.typecheveux %> / <%= @user.longcheveux %></p>
                     </div>
                     <div class="bio-row">
-                      <p><span>Téléphone </span>:  0000000</p>
+                      <p><span></span></p>
                     </div>
                   </div>
                 </div>
