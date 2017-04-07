@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e61dcd1-1009-4533-984b-2a953a1f8200" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/fog.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bimahram.iml" afterPath="$PROJECT_DIR$/.idea/bimahram.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/342b404e-4d1d-4ede-aaf8-15a970458c3a.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/342b404e-4d1d-4ede-aaf8-15a970458c3a.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" afterPath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -121,11 +108,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fog.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fog.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/fog.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
               <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carrierwave.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -203,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/relationship.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170312110045_acts_as_follower_migration.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
@@ -254,6 +250,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
         <option value="$PROJECT_DIR$/config/initializers/fog.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
       </list>
     </option>
   </component>
@@ -364,6 +361,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config/initializers" />
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
     </key>
   </component>
@@ -593,12 +591,12 @@
       <workItem from="1490627451629" duration="588000" />
       <workItem from="1490958287615" duration="1463000" />
       <workItem from="1491481470561" duration="8357000" />
-      <workItem from="1491565689266" duration="24598000" />
+      <workItem from="1491565689266" duration="25295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219531000" />
+    <option name="totallyTimeSpent" value="220228000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,7 +668,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/friendshipsmailer_mailer/demande_contact.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/mailers/friendshipsmailer_mailer.rb" />
     <entry file="file://$PROJECT_DIR$/app/views/friend_mailer/friend_request.text.erb" />
     <entry file="file://$PROJECT_DIR$/app/mailers/friend_mailer.rb" />
@@ -1032,6 +1029,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding />
         </state>
       </provider>
