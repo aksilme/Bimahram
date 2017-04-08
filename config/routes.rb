@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   delete 'delete_friendship' => "friendships#destroy"
 
   get 'pages/index'
+  get 'pages/inscription'
   get 'user/:id' => "pages#profil"
   get 'pages/explore'
 

@@ -1,6 +1,12 @@
 class PagesController < ApplicationController
   def index
   end
+  def inscription
+
+  end
+  def erreur
+
+  end
 
   def profil
     if(User.find_by_username(params[:id]))
