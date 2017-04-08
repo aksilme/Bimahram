@@ -34,7 +34,7 @@
 
 
         <% else %>
-            <li><%= link_to "Créer un compte", :controller => "pages", :action => "inscription" %></li>
+            <li><a href="/pages/inscription">Créer un compte</a></li>
             <li><a href="<%= new_user_session_path %>">Se connecter</a></li>
 
         <% end %>
