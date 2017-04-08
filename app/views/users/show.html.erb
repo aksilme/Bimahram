@@ -23,6 +23,7 @@
           <div class="col-lg-4 col-sm-4 follow-info">
             <p></p>
             <span class="fa fa-home"> <%= @user.city %></span>  <span class="fa fa-calendar"> <%= @user.birthday  %> ans</span>  <span class="fa fa-arrows-v"> Taille<%= @user.taille %> cm</span>  <span class="fa fa-street-view"> Poids: <%= @user.poids %> kg</span>
+            <span class="fa fa-street-view"> Dernier passage: <%= time_ago_in_words(@user.last_sign_in_at) %> </span>
             <h6>
 
             </h6>
