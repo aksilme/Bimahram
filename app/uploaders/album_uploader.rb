@@ -6,7 +6,7 @@ class AlbumUploader < CarrierWave::Uploader::Base
 
   # Choose what kind of storage to use for this uploader:
    if Rails.env.production?
-     storage :aws
+     storage :fog
    else
      storage :file
    end
