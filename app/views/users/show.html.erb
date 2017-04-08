@@ -3,7 +3,7 @@
     <!-- profile-widget -->
     <div class="col-lg-8 col-lg-offset-2">
       <div class="profile-widget profile-widget-info">
-        <div class="panel-body">
+        <div class="panel-body" style="background: #2ecc71;">
           <div class="col-lg-2 col-sm-2">
             <h4><%= @user.username %></h4>
 
@@ -180,13 +180,13 @@
             <li class="active">
               <a data-toggle="tab" href="#profile">
                 <i class="icon-user"></i>
-                Profile
+                Profil
               </a>
             </li>
             <li>
               <a data-toggle="tab" href="#recent-activity">
                 <i class="icon-home"></i>
-                Les reponses aux questions
+                Personnalité
               </a>
             </li>
           <% if @user.genre == 'homme' %>
@@ -230,7 +230,7 @@
                     <span class="arrow"></span>
                     <div class="text">
                       <a href="#" class="activity-img"></a>
-                      <p class="attribution"><a href="#">Comment qualifieriez-vous votre sitaution financière ?
+                      <p class="attribution"><a href="#">Comment qualifieriez-vous votre situation financière ?
                       </a></p>
                       <p><%= @user.q3 %></p>
                     </div>
@@ -314,16 +314,16 @@
             <!-- profile -->
             <div id="profile" class="tab-pane active">
               <section class="panel">
-                <h4 style="text-align: center;">Annonce: </h4>
+                <h4 style="text-align: center;font-weight: 900;">Annonce: </h4>
                 <div class="bio-graph-heading">
 
-                  <%= @user.annonce %>
+                 <p style=""><b><%= @user.annonce %></b></p>
                 </div>
 
-                <h4 style="text-align: center;">Situation: </h4>
+                <h4 style="text-align: center;font-weight: 900;">Situation: </h4>
                 <div class="bio-graph-heading">
+                  <p style=""><b><%= @user.situation %></b></p>
 
-                  <%= @user.situation %>
                 </div>
                 <div class="panel-body bio-graph-info">
                   <h1>Informations</h1>
