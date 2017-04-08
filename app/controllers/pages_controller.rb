@@ -1,10 +1,14 @@
 class PagesController < ApplicationController
   def index
+    @users = User.all.order('ASC').limit(5)
   end
   def inscription
 
   end
   def erreur
+
+  end
+  def intro
 
   end
 

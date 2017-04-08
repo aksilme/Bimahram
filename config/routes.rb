@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/bimahramfr0641', as: 'rails_admin'
-  root 'pages#index'
+  root 'pages#intro'
   get 'users/show'
 
   devise_for :users
@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   get 'pages/index'
   get 'pages/inscription'
+  get 'pages/intro'
   get 'user/:id' => "pages#profil"
   get 'pages/explore'
 

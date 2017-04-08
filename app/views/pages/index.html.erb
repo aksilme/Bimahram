@@ -1,5 +1,68 @@
-<h1>Bienvenu sur Bimahram</h1>
+<div class="col-lg-8 col-lg-offset-2 " style="background: #3e454d;">
+  <div class="row">
+    <br><br>
+    <div class="panel panel-default">
+    <h1 style="text-align: center">Bienvenu sur Bimahram</h1>
+    </div>
+
+ </div>
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>
+          Nous avons créer BIMAHRAM.COM pour répondre à vos exigences et vos demandes croissantes, frères et soeurs en islam, celles de ne pas enfreindre les limites fixées par ALLAH jella wa 'ala concernant le "Mahram" dans le mariage.
+        </p>
+        <p>
+          Inscrivez-vous dès maintenant... "Une femme mérite un homme qui l'aime et qui la respecte vraiment et un homme mérite une femme qui l'aime et qui apprécie vraiment ses efforts..."
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <h3 style="text-align: center">Les derniers inscrits </h3>
+  </div>
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="col-sm-6">
+          <ul>
+          <% User.order(id: :asc).limit(5).where(genre: 'femme').each do |d| %>
+             <li><a href="/users/<%= d.id %>"><%= d.username %></a>, <%= d.birthday %>, <%= d.city %>  </li>
+          <% end %>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <ul>
+            <% User.order(id: :asc).limit(5).where(genre: 'homme').each do |d| %>
+                <li><a href="/users/<%= d.id %>"><%= d.username %></a>, <%= d.birthday %>, <%= d.city %>  </li>
+            <% end %>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-body">
+          <p>Nous vous recommandons d'être sincère dans vos déclarations... Le prophète bien-aimé à dit  : "Et prenez garde au mensonge car le mensonge mène à la perversion et la perversion mène en enfer..." hadith rapporté par al boukhari et mouslim.</p>
+      </div>
+    </div>
+  </div>
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quae totam voluptatibus. Architecto, consectetur doloremque error exercitationem nam quam rerum sed. Delectus et id itaque, maxime minus officiis similique veritatis?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae cum cumque dolore error facere inventore ipsum libero molestias officia perferendis placeat porro sapiente similique sunt temporibus, tenetur voluptate voluptatem!</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
