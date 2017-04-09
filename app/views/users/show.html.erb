@@ -1,7 +1,7 @@
-<section class="wrapper">
+<section class="wrapper" style="margin-top: -30px">
   <div class="row">
     <!-- profile-widget -->
-    <div class="col-lg-8 col-lg-offset-2">
+    <div class="col-lg-12 ">
       <div class="profile-widget profile-widget-info">
         <div class="panel-body" style="background: #2ecc71;">
           <div class="col-lg-2 col-sm-2">
@@ -29,7 +29,7 @@
               <% if @user.current_sign_in_at.to_i > @user.last_sign_out_at.to_i  %>
                 En ligne
               <% else %>
-                Dernier passage: <%= time_ago_in_words(@user.last_sign_out_at) %>
+                Dernier passage: il y a <%= time_ago_in_words(@user.last_sign_out_at) %>
               <% end %>
 
             </span>
@@ -57,7 +57,7 @@
   <!--- le suivis des demandes -->
   <% if user_signed_in? && @user.id == current_user.id %>
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-lg-12">
           <section class="panel">
             <header class="panel-heading tab-bg-info">
               <ul class="nav nav-tabs">
@@ -182,7 +182,7 @@
       <!--- fin suivis des demandes -->
   <!-- profil debut-->
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
+    <div class="col-lg-12">
       <section class="panel">
         <header class="panel-heading tab-bg-info">
           <ul class="nav nav-tabs">

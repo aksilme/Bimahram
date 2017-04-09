@@ -5,31 +5,40 @@
     <%= csrf_meta_tags %>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body class="body" style="background-image: url(https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491653541/logo_max_d0zzlp.png);">
-    <%= render 'layouts/navbar' %>
-    <% flash.each do |key, value| %>
 
-      <div style="width: 25%" class="fade in alert alert-<%= key %>">
-        <a href="#" data-dismiss="alert" class="close close-sm">×</a>
-        <ul>
-          <li>
-            <strong><%= value %></strong>
-          </li>
-        </ul>
-      </div>
-  <% end %>
 
 
     <div class="container">
-      <row>
+      <div class="col-lg-8 col-lg-offset-2">
+        <%= render 'layouts/navbar' %>
+        <% flash.each do |key, value| %>
+
+            <div style="width: 25%" class="fade in alert alert-<%= key %>">
+              <a href="#" data-dismiss="alert" class="close close-sm">×</a>
+              <ul>
+                <li>
+                  <strong><%= value %></strong>
+                </li>
+              </ul>
+            </div>
+        <% end %>
+
+        <row>
 
           <%= yield %>
 
-      </row>
+        </row>
+
+
+      </div>
+
+
 
     </div>
   <%= render 'layouts/footer' %>
