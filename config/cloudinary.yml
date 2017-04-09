@@ -1,0 +1,9 @@
+development:
+  cloud_name: "bimahram-herokuapp-com"
+  api_key: "748588225157625"
+  api_secret: "v8dVLPL1P-KO0nuTsvN8ubJPBwA"
+
+production:
+  cloud_name: "bimahram-herokuapp-com"
+  api_key: "748588225157625"
+  api_secret: "v8dVLPL1P-KO0nuTsvN8ubJPBwA"
