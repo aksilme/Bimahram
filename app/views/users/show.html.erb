@@ -25,6 +25,15 @@
             <span class="fa fa-home"> <%= @user.city %></span>  <span class="fa fa-calendar"> <%= @user.birthday  %> ans</span>  <span class="fa fa-arrows-v"> Taille<%= @user.taille %> cm</span>  <span class="fa fa-street-view"> Poids: <%= @user.poids %> kg</span>
             <br>
             <span class="fa fa fa-clock-o">
+             derniere connecté a  <%= @user.current_sign_in_at %>
+              derniere deconnexion : <%= @user.last_sign_out_at %>
+              <hr>
+              <% if @user.current_sign_in_at > @user.last_sign_out_at  %>
+                En ligne
+              <% else %>
+                Dernier passage: <%= time_ago_in_words(@user.last_sign_out_at) %>
+              <% end %>
+              <hr>
               <% if @user.online? %>
                 En ligne
               <% else %>
