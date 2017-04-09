@@ -48,6 +48,39 @@
       </div>
     </div>
   </div>
+
+  <div class="panel panel-default">
+    <h3 style="text-align: center;font-weight: 800;">Les utilisateurs enligne </h3>
+  </div>
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="col-sm-6">
+          <ul>
+
+            <% User.order(id: :asc).limit(5).where(genre: 'femme').each do |d| %>
+                <% if d.current_sign_in_at.to_i > d.last_sign_out_at.to_i %>
+                    <li><a href="/users/<%= d.id %>"><%= d.username %></a>, <%= d.birthday %>, <%= d.city %>  </li>
+                <% end%>
+
+            <% end %>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <ul>
+            <% User.order(id: :asc).limit(5).where(genre: 'homme').each do |d| %>
+                <% if d.current_sign_in_at.to_i > d.last_sign_out_at.to_i %>
+                    <li><a href="/users/<%= d.id %>"><%= d.username %></a>, <%= d.birthday %>, <%= d.city %>  </li>
+                <% end%>
+            <% end %>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <div class="row">
     <div class="panel panel-default">
       <div class="panel-body">

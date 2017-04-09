@@ -70,7 +70,7 @@
                 <li>
                   <a data-toggle="tab" href="#envoye">
                     <i class="icon-home"></i>
-                    les demandes reçues
+                    Les demandes reçues
                   </a>
                 </li>
 
@@ -374,12 +374,18 @@
 
               <div class="row">
                 <div class="bio-row">
-                  <p>les photos</p>
+                  <h4>Photo de profil:</h4>
+
+                  <% if  @user.image != nil%>
+                      <%=  image_tag @user.image.thumb %>
+                  <% end %>
+                  <h4>Album photo:</h4>
+
                   <% if  @user.album != nil%>
                     <%=  image_tag @user.album.thumb %>
                   <% end %>
                   <% if  @user.album2 != nil%>
-                      <%=  image_tag @user.album2.thumb %>
+                      <%=  image_tag @user.album2.moyen %>
                   <% end %>
                   <% if  @user.album3 != nil%>
                       <%=  image_tag @user.album3.thumb %>

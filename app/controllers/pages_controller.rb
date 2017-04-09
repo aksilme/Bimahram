@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def index
     @users = User.all.order('ASC').limit(5)
+    @enligne =  User.where { current_sign_in_at.to_i >  last_sign_out_at.to_i }
   end
   def inscription
 

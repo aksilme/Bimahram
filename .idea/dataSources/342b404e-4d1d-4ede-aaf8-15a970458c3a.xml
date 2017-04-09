@@ -366,31 +366,51 @@ followed_id</ColNames>
       <Position>42</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <index id="99" parent="19" name="index_users_on_email">
+    <column id="99" parent="19" name="album2">
+      <Position>43</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="100" parent="19" name="album3">
+      <Position>44</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="101" parent="19" name="album4">
+      <Position>45</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="102" parent="19" name="album5">
+      <Position>46</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="103" parent="19" name="last_sign_out_at">
+      <Position>47</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <index id="104" parent="19" name="index_users_on_email">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="100" parent="19" name="index_users_on_reset_password_token">
+    <index id="105" parent="19" name="index_users_on_reset_password_token">
       <ColNames>reset_password_token</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="101" parent="19" name="index_users_on_username">
+    <index id="106" parent="19" name="index_users_on_username">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="102" parent="19" name="PRIMARY">
+    <key id="107" parent="19" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="103" parent="19" name="index_users_on_email">
+    <key id="108" parent="19" name="index_users_on_email">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>index_users_on_email</UnderlyingIndexName>
     </key>
-    <key id="104" parent="19" name="index_users_on_reset_password_token">
+    <key id="109" parent="19" name="index_users_on_reset_password_token">
       <ColNames>reset_password_token</ColNames>
       <UnderlyingIndexName>index_users_on_reset_password_token</UnderlyingIndexName>
     </key>
-    <key id="105" parent="19" name="index_users_on_username">
+    <key id="110" parent="19" name="index_users_on_username">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>index_users_on_username</UnderlyingIndexName>
     </key>
