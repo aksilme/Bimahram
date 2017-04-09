@@ -28,17 +28,13 @@
              derniere connecté a  <%= @user.current_sign_in_at %>
               derniere deconnexion : <%= @user.last_sign_out_at %>
               <hr>
-              <% if @user.current_sign_in_at > @user.last_sign_out_at  %>
+              <% if @user.current_sign_in_at.to_i > @user.last_sign_out_at.to_i  %>
                 En ligne
               <% else %>
                 Dernier passage: <%= time_ago_in_words(@user.last_sign_out_at) %>
               <% end %>
               <hr>
-              <% if @user.online? %>
-                En ligne
-              <% else %>
-                  Dernier passage: <%= time_ago_in_words(@user.last_sign_out_at) %>
-              <% end %>
+
 
 
 

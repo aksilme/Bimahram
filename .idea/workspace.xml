@@ -70,8 +70,18 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="174">
+              <caret line="30" column="74" lean-forward="false" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2106">
+              <caret line="92" column="32" lean-forward="false" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -151,8 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn</find>
-      <find>actio</find>
       <find>active</find>
       <find>demande env</find>
       <find>mahra</find>
@@ -179,7 +187,9 @@
       <find>annonce</find>
       <find>date</find>
       <find>de</find>
+      <find>current_sign_in_at</find>
       <find>dernier</find>
+      <find>last_sign_out_at</find>
       <find>des</find>
     </findStrings>
   </component>
@@ -722,12 +732,12 @@
       <workItem from="1491565689266" duration="44765000" />
       <workItem from="1491653441808" duration="4039000" />
       <workItem from="1491663322969" duration="6038000" />
-      <workItem from="1491691726188" duration="6424000" />
+      <workItem from="1491691726188" duration="7242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256199000" />
+    <option name="totallyTimeSpent" value="257017000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1054,14 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2597">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/friendship_mailer/create_friendship.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1141,10 +1143,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="3" column="62" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="62" />
+        <state relative-caret-position="2106">
+          <caret line="92" column="32" lean-forward="false" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1157,10 +1159,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="3" column="62" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        <state relative-caret-position="174">
+          <caret line="30" column="74" lean-forward="false" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
           <folding />
         </state>
       </provider>
