@@ -15,6 +15,15 @@ mount_uploader :album5, AlbumUploader
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
+  #verifier si l'utilisateur est enligne
+    def online?
+      if current_sign_in_at.present?
+        last_sign_out_at.present? ? current_sign_in_at > last_sign_out_at : true
+      else
+        false
+      end
+    end
+
    #friendships method
   validates_presence_of :email
   validates_presence_of :username

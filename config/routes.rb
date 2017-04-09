@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root 'pages#intro'
   get 'users/show'
 
-  devise_for :users
+  devise_for :users, controllers: { sessions: 'bimdevise/sessions' }
+
   resources :users do
     member do
       get 'matches'
