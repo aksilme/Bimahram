@@ -1,6 +1,8 @@
 
   <h1 class="well" style="text-align: center">Créer un compte</h1>
-<div class="col-lg-12 well">
+<% if params[:data].present?  %>
+
+  <div class="col-lg-12 well">
   <div class="row">
 <%= form_for(resource, html: { multipart: true },as: resource_name, url: registration_path(resource_name), ) do |f| %>
   <%= devise_error_messages! %>
@@ -363,3 +365,6 @@
 </div>
 
   <br>
+<% else %>
+      <div>Oupps! veuillez d'abord passe pour la page de connexion pour pouvoir créer un compte</div>
+<% end %>

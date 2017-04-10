@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e61dcd1-1009-4533-984b-2a953a1f8200" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/inscription.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/inscription.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -58,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="inscription.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inscription.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/inscription.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+            <state relative-caret-position="213">
+              <caret line="53" column="98" lean-forward="false" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="98" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
@@ -84,7 +84,7 @@
                 <element signature="n#style#0;n#span#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#2;n#td#0;n#tr#1;n#table#0;n#form#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#3;n#td#0;n#tr#1;n#table#0;n#form#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
@@ -92,6 +92,19 @@
                 <element signature="n#style#0;n#a#0;n#div#1;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#1;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#1;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="368" column="95" lean-forward="false" selection-start-line="368" selection-start-column="95" selection-end-line="368" selection-end-column="95" />
+              <folding>
+                <element signature="e#104#18629#0#HTML" expanded="false" />
+                <element signature="e#10819#10851#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,13 +196,13 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/rails_admin.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/inscription.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
       </list>
     </option>
   </component>
@@ -549,12 +562,12 @@
       <workItem from="1491691726188" duration="29514000" />
       <workItem from="1491764227294" duration="1319000" />
       <workItem from="1491767038358" duration="4710000" />
-      <workItem from="1491780508288" duration="778000" />
+      <workItem from="1491780508288" duration="1755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286096000" />
+    <option name="totallyTimeSpent" value="287073000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -960,14 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="174" column="117" lean-forward="false" selection-start-line="174" selection-start-column="117" selection-end-line="174" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -994,8 +999,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/inscription.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+        <state relative-caret-position="213">
+          <caret line="53" column="98" lean-forward="false" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="98" />
           <folding>
             <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
@@ -1017,7 +1022,7 @@
             <element signature="n#style#0;n#span#0;n#label#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#td#0;n#tr#1;n#table#0;n#form#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#3;n#td#0;n#tr#1;n#table#0;n#form#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
@@ -1025,6 +1030,17 @@
             <element signature="n#style#0;n#a#0;n#div#1;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#1;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#1;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="368" column="95" lean-forward="false" selection-start-line="368" selection-start-column="95" selection-end-line="368" selection-end-column="95" />
+          <folding>
+            <element signature="e#104#18629#0#HTML" expanded="false" />
+            <element signature="e#10819#10851#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
