@@ -1,7 +1,7 @@
 <%= search_form_for @q do |f| %>
-    <div class="row">
+    <div class="row" style="background: white; margin-top: -28px;">
       <!-- formualaire de recherche -->
-      <div class="col-md-6 ">
+      <div class="col-md-6 " style="background: white">
        <div class="well"><h3 style="text-align: center;">Formulaire de recherche</h3></div>
 
         <div id="filter-panel" class="filter-panel collapse in" style="height: auto;">
@@ -92,7 +92,7 @@
 
 
       <!-- resultat de recherche -->
-      <div class="row col-md-6 c custyle">
+      <div class="row col-md-6 c custyle" style="background: white">
         <div class="well"><h3 style="text-align: center">Resultat de recherche</h3></div>
 
         <table class="table table-striped custab">
@@ -113,7 +113,7 @@
                   <td><a href="<%= user_path(u) %>"><%= u.username %></a></td>
                   <td><%= u.birthday %></td>
                   <td><%= u.city %></td>
-                  <td><%= u.annonce %></td>
+                  <td><%= truncate(u.annonce,:length => 12) %></td>
 
 
 
