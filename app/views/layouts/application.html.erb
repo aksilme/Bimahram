@@ -13,35 +13,38 @@
   <body class="body" style="background-image: url(https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491766711/logo_fond_mahram_rbu2xr.jpg);">
 
 
+<div class="wrapper" style="margin-top: -20px">
+  <div class="container">
+    <div class="col-lg-8 col-lg-offset-2">
+      <%= render 'layouts/navbar' %>
+      <% flash.each do |key, value| %>
 
-    <div class="container">
-      <div class="col-lg-8 col-lg-offset-2">
-        <%= render 'layouts/navbar' %>
-        <% flash.each do |key, value| %>
+          <div style="width: 25%" class="fade in alert alert-<%= key %>">
+            <a href="#" data-dismiss="alert" class="close close-sm">×</a>
+            <ul>
+              <li>
+                <strong><%= value %></strong>
+              </li>
+            </ul>
+          </div>
+      <% end %>
 
-            <div style="width: 25%" class="fade in alert alert-<%= key %>">
-              <a href="#" data-dismiss="alert" class="close close-sm">×</a>
-              <ul>
-                <li>
-                  <strong><%= value %></strong>
-                </li>
-              </ul>
-            </div>
-        <% end %>
+      <row>
 
-        <row>
+        <%= yield %>
 
-          <%= yield %>
-
-        </row>
-
-
-      </div>
-
+      </row>
 
 
     </div>
+
+
+
+  </div>
   <%= render 'layouts/footer' %>
+
+</div>
+
 
   </body>
 </html>

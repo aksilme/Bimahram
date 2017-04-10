@@ -57,6 +57,10 @@
 
 body {
   background-color: #eee;
+  position: relative;
+  margin: 0;
+
+  min-height: 100%;
 }
 
 *[role="form"] {
@@ -140,6 +144,19 @@ div.footer-bottom{
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
   width: 100%;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+div.footer-bottom{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.2rem;
+  background-color: #efefef;
+  text-align: center;
 }
 
 
