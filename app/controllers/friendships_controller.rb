@@ -8,6 +8,7 @@ class FriendshipsController < ApplicationController
     @friendship = current_user.request_friendship(@user)
     respond_to do |format|
       format.html {redirect_to users_path, notice: "mise en relation crée"}
+
     end
     FriendshipMailer.create_friendship(@user).deliver
   end

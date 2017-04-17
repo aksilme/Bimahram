@@ -1,10 +1,10 @@
                   Prefix Verb   URI Pattern                       Controller#Action
              rails_admin        /bimahramfr0641                   RailsAdmin::Engine
-                    root GET    /                                 pages#index
+                    root GET    /                                 pages#intro
               users_show GET    /users/show(.:format)             users#show
-        new_user_session GET    /users/sign_in(.:format)          devise/sessions#new
-            user_session POST   /users/sign_in(.:format)          devise/sessions#create
-    destroy_user_session DELETE /users/sign_out(.:format)         devise/sessions#destroy
+        new_user_session GET    /users/sign_in(.:format)          bimdevise/sessions#new
+            user_session POST   /users/sign_in(.:format)          bimdevise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)         bimdevise/sessions#destroy
        new_user_password GET    /users/password/new(.:format)     devise/passwords#new
       edit_user_password GET    /users/password/edit(.:format)    devise/passwords#edit
            user_password PATCH  /users/password(.:format)         devise/passwords#update
@@ -29,9 +29,14 @@ cancel_user_registration GET    /users/cancel(.:format)           devise/registr
                          PATCH  /users/:id(.:format)              users#update
                          PUT    /users/:id(.:format)              users#update
                          DELETE /users/:id(.:format)              users#destroy
+       accept_friendship PUT    /friendships/:id/accept(.:format) friendships#accept
+             friendships POST   /friendships(.:format)            friendships#create
+              friendship DELETE /friendships/:id(.:format)        friendships#destroy
        create_friendship POST   /create_friendship(.:format)      friendships#create
        delete_friendship DELETE /delete_friendship(.:format)      friendships#destroy
              pages_index GET    /pages/index(.:format)            pages#index
+       pages_inscription GET    /pages/inscription(.:format)      pages#inscription
+             pages_intro GET    /pages/intro(.:format)            pages#intro
                          GET    /user/:id(.:format)               pages#profil
            pages_explore GET    /pages/explore(.:format)          pages#explore
 
