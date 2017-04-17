@@ -154,12 +154,12 @@
           <div class="col-sm-12">
             <div class="row">
               <div class="col-sm-6 form-group">
-                <p>Votre situation <b>(Décrivez au maximum)</b></p>
+                <p>Votre situation <b>(Décrivez-vous avec sincérité et en detail)</b></p>
                 <%= f.text_area :situation, autofocus: true, class: 'form-control'  %>
               </div>
 
               <div class="col-sm-6 form-group">
-                <p>Votre annonce </p>
+                <p>Vos espérances  </p>
                 <%= f.text_area :annonce, autofocus: true, class: 'form-control'  %>
               </div>
 
@@ -252,7 +252,7 @@
               <% end %>
 
               <div class="col-sm-6 form-group">
-                <b>Question 8: Comment qualifiriez vous votre vos connaissances en islam ? </b> <br><br>
+                <b>Question 8: Comment qualifiriez vous vos connaissances en islam ? </b> <br><br>
                 <%= f.select(:q8, options_for_select([['Excellentes en progrés constants', 'Excellentes en progrés constants'], ['bonnes sans plus', 'bonnes sans plus'], ['pas assez bonnes', 'pas assez bonnes'], ['en devenir', 'en devenir']]), {}, {class: "form-control"}) %>
               </div>
 
