@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e61dcd1-1009-4533-984b-2a953a1f8200" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -101,8 +100,8 @@
       <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="318" column="59" lean-forward="false" selection-start-line="318" selection-start-column="45" selection-end-line="318" selection-end-column="59" />
+            <state relative-caret-position="239">
+              <caret line="338" column="72" lean-forward="false" selection-start-line="338" selection-start-column="72" selection-end-line="338" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -620,12 +619,12 @@
       <workItem from="1491995561447" duration="6792000" />
       <workItem from="1492363295300" duration="1079000" />
       <workItem from="1492429191016" duration="530000" />
-      <workItem from="1492437471169" duration="2212000" />
+      <workItem from="1492437471169" duration="2378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304649000" />
+    <option name="totallyTimeSpent" value="304815000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1084,8 +1083,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="318" column="59" lean-forward="false" selection-start-line="318" selection-start-column="45" selection-end-line="318" selection-end-column="59" />
+        <state relative-caret-position="239">
+          <caret line="338" column="72" lean-forward="false" selection-start-line="338" selection-start-column="72" selection-end-line="338" selection-end-column="72" />
           <folding />
         </state>
       </provider>
