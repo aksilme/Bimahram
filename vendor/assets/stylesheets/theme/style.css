@@ -12,7 +12,7 @@ Website: http://geekslabs.com/
 body {
     color: #797979;
     background: #eeeeee;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif !important;
     padding: 0px !important;
     margin: 0px !important;
     font-size:14px !important;    
@@ -109,7 +109,7 @@ table tr th { color: #007AFF;}
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 300;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif !important;
 }
 
 .login-form .checkbox {
@@ -118,7 +118,7 @@ table tr th { color: #007AFF;}
 .login-form .checkbox {
     font-weight: normal;    
     font-weight: 300;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif !important;
 }
 .login-form .form-control {
     position: relative;
@@ -164,7 +164,7 @@ table tr th { color: #007AFF;}
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif !important;
     box-shadow: 0 4px #e56b60;
     margin-bottom: 20px;
 }
@@ -1318,7 +1318,7 @@ div[data-role="editor-toolbar"] {
 
 .badge.bg-important {
     background: #FF2D55;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif !important;
     font-size: 11px;
 }
 
@@ -2735,12 +2735,12 @@ ul.inbox-pagination li {
 
 .modal-header h4.modal-title {
     font-weight: 300;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif !important;
 }
 
 .modal-body label {
     font-weight: 400;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif !important;
 }
 
 
@@ -3980,7 +3980,7 @@ table.sliders tr td {
     background: transparent;
     border: none;
     color: #34495e;
-    font-family: "Lato", sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif !important;
     font-size: 14px;
     margin: 0px;
     padding: 0 0 0 5px;
@@ -4126,7 +4126,7 @@ table.sliders tr td {
 }
 
 .daterangepicker .calendar th, .daterangepicker .calendar td {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif !important;
     font-weight: 300;
     text-align: center;
     white-space: nowrap;
