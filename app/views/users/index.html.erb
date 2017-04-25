@@ -1,81 +1,136 @@
 <%= search_form_for @q do |f| %>
     <div class="row" style="background: white; margin-top: -28px;">
       <!-- formualaire de recherche -->
-      <div class="col-md-4 " style="background: white">
+      <div class="col-md-8 " style="background: white">
        <div class="well"><h3 style="text-align: center;">Formulaire de recherche</h3></div>
 
         <div id="filter-panel" class="filter-panel collapse in" style="height: auto;">
           <div class="panel panel-default">
             <div class="panel-body">
               <form class="form-inline" role="form">
-                <div class="form-group">
-                  <label class="filter-col" style="margin-right:0;" for="pref-perpage">Pseudonyme</label>
-                  <%= f.search_field :username_cont, class: 'form-control' %>
+                <div class="col-md-6">
+
+                  <div class="form-group">
+                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Pseudonyme</label>
+                    <%= f.search_field :username_cont, class: 'form-control' %>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Genre</label>
+                    <%= f.select :genre_cont,  options_for_select([['Je recherche un homme', 'homme'],['Je recherche une femme', 'femme']]),{}, {class: "form-control"} %>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Lieux</label>
+                    <%= f.select(:city_cont, options_for_select([['Peu importe', ''],['Alsace', 'Alsace'], ['Aquitaine', 'Aquitaine'],
+                                                                 ['Auvergne', 'Auvergne'], ['Basse-Normandie', 'Basse-Normandie'],['Bourgogne', 'Bourgogne'],
+                                                                 ['Bretagne', 'Bretagne'], ['Centre', 'Centre'],['Chapagne-Ardenne ', 'Chapagne-Ardenne'],
+                                                                 ['Franche-Compté', 'Franche-Compté'], ['Haute-Normandie', 'Haute-Normandie'],['Ile-de-france', 'Ile-de-france'],
+                                                                 ['Languedoc-Roussillon', 'Languedoc-Roussillon'], ['Limousin', 'Limousin'],['Lorraine', 'Lorraine'],
+                                                                 ['Midi-pyrénées', 'Midi-pyrénées'], ['Nord-Pas-de-Calais', 'Nord-Pas-de-Calais'],['Pays de la loire', 'Pays de la loire'],
+                                                                 ['Picardie', 'Picardie'], ['Poitou-Charentes', 'Poitou-Charentes'],['PACA', 'PACA'],
+                                                                 ['Rhône-Alpes', 'Rhône-Alpes'], ['Allemagne', 'Allemagne'],['Angleterre', 'Angleterre'],
+                                                                 ['Belgique', 'Belgique'], ['Canada', 'Canada'],['Espagne', 'Espagne'],
+                                                                 ['Hollande', 'Hollande'], ['Italie', 'Italie'],['Luxembourg', 'Luxembourg'],
+                                                                 ['Suisse', 'Suisse'], ['Algérie', 'Algérie'],['Maroc', 'Maroc'],['Tunisie', 'Tunisie']
+                                                                ]), {}, {class: "form-control"}) %>
+
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <label class="filter-col" style="margin-right:0;" for="pref-perpage">Age Minimum</label>
+                      <%= f.select :birthday_gteq, (18..99).to_a,{:selected => 18}, {class: "form-control"} %>
+
+
+                    </div>
+                    <div class="col-md-6">
+                      <label class="filter-col" style="margin-right:0;" for="pref-perpage">Age Maximum</label>
+                      <%= f.select :birthday_lteq, (18..99).to_a,{:selected => 75}, {class: "form-control"} %>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <label class="filter-col" style="margin-right:0;" for="pref-perpage">Taille Minimum (en cm)</label>
+                      <%= f.select :taille_gteq, (100..220).to_a,{}, {class: "form-control"} %>
+
+
+
+                    </div>
+                    <div class="col-md-6">
+                      <label class="filter-col" style="margin-right:0;" for="pref-perpage">Taille Maximum (en cm)</label>
+                      <%= f.select :taille_lteq, (100..220).to_a,{:selected => 190}, {class: "form-control"} %>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <label class="filter-col" style="margin-right:0;" for="pref-perpage">Poids Minimum </label>
+                      <%= f.select :poids_gteq, (40..120).to_a,{}, {class: "form-control"} %>
+
+
+
+
+                    </div>
+                    <div class="col-md-6">
+                      <label class="filter-col" style="margin-right:0;" for="pref-perpage">Poids Maximum </label>
+                      <%= f.select :poids_lteq, (40..120).to_a,{:selected => 90}, {class: "form-control"} %>
+                    </div>
+
+
+
                 </div>
 
-                <div class="form-group">
-                  <label class="filter-col" style="margin-right:0;" for="pref-perpage">Genre</label>
-                  <%= f.select :genre_cont,  options_for_select([['Je recherche un homme', 'homme'],['Je recherche une femme', 'femme']]),{}, {class: "form-control"} %>
                 </div>
+                <div class="col-md-6">
+                  <!-- deuxieme collonne -->
 
-                <div class="form-group">
-                  <label class="filter-col" style="margin-right:0;" for="pref-perpage">Lieux</label>
-                  <%= f.select(:city_cont, options_for_select([['Peu importe', ''],['Alsace', 'Alsace'], ['Aquitaine', 'Aquitaine'],
-                                                               ['Auvergne', 'Auvergne'], ['Basse-Normandie', 'Basse-Normandie'],['Bourgogne', 'Bourgogne'],
-                                                               ['Bretagne', 'Bretagne'], ['Centre', 'Centre'],['Chapagne-Ardenne ', 'Chapagne-Ardenne'],
-                                                               ['Franche-Compté', 'Franche-Compté'], ['Haute-Normandie', 'Haute-Normandie'],['Ile-de-france', 'Ile-de-france'],
-                                                               ['Languedoc-Roussillon', 'Languedoc-Roussillon'], ['Limousin', 'Limousin'],['Lorraine', 'Lorraine'],
-                                                               ['Midi-pyrénées', 'Midi-pyrénées'], ['Nord-Pas-de-Calais', 'Nord-Pas-de-Calais'],['Pays de la loire', 'Pays de la loire'],
-                                                               ['Picardie', 'Picardie'], ['Poitou-Charentes', 'Poitou-Charentes'],['PACA', 'PACA'],
-                                                               ['Rhône-Alpes', 'Rhône-Alpes'], ['Allemagne', 'Allemagne'],['Angleterre', 'Angleterre'],
-                                                               ['Belgique', 'Belgique'], ['Canada', 'Canada'],['Espagne', 'Espagne'],
-                                                               ['Hollande', 'Hollande'], ['Italie', 'Italie'],['Luxembourg', 'Luxembourg'],
-                                                               ['Suisse', 'Suisse'], ['Algérie', 'Algérie'],['Maroc', 'Maroc'],['Tunisie', 'Tunisie']
-                                                              ]), {}, {class: "form-control"}) %>
+                  <div class="form-group">
+                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Type de cheveux</label>
+                    <%= f.select :longcheveux_cont,  options_for_select([['Peu importe', ''],['raides', 'raides'], ['ondulés', 'ondules'], ['bouclés', 'bouclés'], ['crépus', 'crepus']]),{}, {class: "form-control"} %>
+                  </div>
 
-                </div>
-                <div class="form-group">
-                  <div class="col-md-6">
-                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Age Minimum</label>
-                    <%= f.select :birthday_gteq, (18..99).to_a,{:selected => 18}, {class: "form-control"} %>
+                  <div class="form-group">
+                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Longueur de cheveux </label>
+                    <%= f.select(:typecheveux_cont, options_for_select([['Peu importe', ''],['court', 'court'], ['mi-long', 'milong'], ['long', 'long']]), {}, {class: "form-control"}) %>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Rapports avec vos parents et proches</label>
+                      <%= f.select(:q1_cont, options_for_select([['Peu importe', ''],['Excellents', 'excellents'], ['respectueux sans plus', 'respectueux respectueux sans plus'],['pas bon', 'pas bon'], ['rompus contre ma volenté (déces,éloignement, conflit ou autres)', 'rompus contre ma volenté (déces,éloignement, conflit ou autres)']]), {}, {class: "form-control"}) %>
+
+                  </div>
+                  <div class="form-group">
+
+                      <label class="filter-col" style="margin-right:0;" for="pref-perpage">pratique religieuse</label>
+                      <%= f.select(:q2_cont, options_for_select([['Peu importe', ''],['Tres régulière ', 'tres régulière '], ['moyenne', 'moyenne'], ['faible à améliorer d’en devenir', 'faible à améliorer d’en devenir']]), {}, {class: "form-control"}) %>
 
 
                   </div>
-                  <div class="col-md-6">
-                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Age Maximum</label>
-                    <%= f.select :birthday_lteq, (18..99).to_a,{:selected => 75}, {class: "form-control"} %>
-                  </div>
 
-                </div>
-
-                <div class="form-group">
-                  <div class="col-md-6">
-                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Taille Minimum (en cm)</label>
-                    <%= f.select :taille_gteq, (100..220).to_a,{}, {class: "form-control"} %>
-
+                  <div class="form-group">
+                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Sitaution financière</label>
+                    <%= f.select(:q3_cont, options_for_select([['Peu importe', ''],['Excellente et aisée', 'Excellente et aisée'], ['normale', 'normale'],  ['moyenne mais confortable', 'moyenne mais confortable'], ['difficile', 'difficile']]), {}, {class: "form-control"}) %>
 
 
                   </div>
-                  <div class="col-md-6">
-                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Taille Maximum (en cm)</label>
-                    <%= f.select :taille_lteq, (100..220).to_a,{:selected => 190}, {class: "form-control"} %>
-                  </div>
 
-                </div>
+                  <div class="form-group">
 
-                <div class="form-group">
-                  <div class="col-md-6">
-                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Poids Minimum </label>
-                    <%= f.select :poids_gteq, (40..120).to_a,{}, {class: "form-control"} %>
-
-
-
+                      <label class="filter-col" style="margin-right:0;" for="pref-perpage">Origine paternelle </label>
+                    <%= f.select(:q4_cont, options_for_select([['Peu importe', ''],['Arabe moyen-orient', 'arabe et moyen orient'], ['maghrebine', 'maghrebine'],  ['africaine', 'africaine'], ['antillaise', 'antillaise'], ['européenne', 'européenne'], ['autres', 'autres']]), {}, {class: "form-control"}) %>
 
                   </div>
-                  <div class="col-md-6">
-                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Poids Maximum </label>
-                    <%= f.select :poids_lteq, (40..120).to_a,{:selected => 90}, {class: "form-control"} %>
+                  <div class="form-group">
+
+                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">situation matrimoniale </label>
+                    <%= f.select(:q5_cont, options_for_select([['Peu importe', ''],['célibataire jamais marié', 'célibataire jamais marié'], ['divorcé sans enfants', 'divorcé sans enfants'], ['divorcé avec enfant', 'divorcé avec enfant'], ['marié', 'marié']]), {}, {class: "form-control"}) %>
+
                   </div>
+
+
 
                 </div>
 
