@@ -92,43 +92,24 @@
                     <%= f.select :longcheveux_cont,  options_for_select([['Peu importe', ''],['raides', 'raides'], ['ondulés', 'ondules'], ['bouclés', 'bouclés'], ['crépus', 'crepus']]),{}, {class: "form-control"} %>
                   </div>
 
-                  <div class="form-group">
+                 <div class="form-group">
                     <label class="filter-col" style="margin-right:0;" for="pref-perpage">Longueur de cheveux </label>
                     <%= f.select(:typecheveux_cont, options_for_select([['Peu importe', ''],['court', 'court'], ['mi-long', 'milong'], ['long', 'long']]), {}, {class: "form-control"}) %>
                   </div>
 
                   <div class="form-group">
-                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Rapports avec vos parents et proches</label>
-                      <%= f.select(:q1_cont, options_for_select([['Peu importe', ''],['Excellents', 'excellents'], ['respectueux sans plus', 'respectueux respectueux sans plus'],['pas bon', 'pas bon'], ['rompus contre ma volenté (déces,éloignement, conflit ou autres)', 'rompus contre ma volenté (déces,éloignement, conflit ou autres)']]), {}, {class: "form-control"}) %>
-
-                  </div>
-                  <div class="form-group">
-
-                      <label class="filter-col" style="margin-right:0;" for="pref-perpage">pratique religieuse</label>
-                      <%= f.select(:q2_cont, options_for_select([['Peu importe', ''],['Tres régulière ', 'tres régulière '], ['moyenne', 'moyenne'], ['faible à améliorer d’en devenir', 'faible à améliorer d’en devenir']]), {}, {class: "form-control"}) %>
-
-
+                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Couleur de cheveux </label>
+                    <%= f.select(:colcheveu_cont, options_for_select([['Peu importe', ''],['Noir', 'noir'], ['brun', 'brun'], ['auburn', 'aubrun'], ['châtain', 'chatain'], ['roux', 'roux'], ['blond', 'blond'], ['blanc', 'blanc']]), {}, {class: "form-control"}) %>
                   </div>
 
                   <div class="form-group">
-                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Sitaution financière</label>
-                    <%= f.select(:q3_cont, options_for_select([['Peu importe', ''],['Excellente et aisée', 'Excellente et aisée'], ['normale', 'normale'],  ['moyenne mais confortable', 'moyenne mais confortable'], ['difficile', 'difficile']]), {}, {class: "form-control"}) %>
-
-
+                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">Couleur des yeux</label>
+                    <%= f.select(:coleuryeux_cont, options_for_select([['peu importe', ''],['Noir', 'noir'], ['Marron', 'marron'], ['Bleu', 'bleu'], ['Vert', 'vert'], ['Noisette', 'noisette']]), {}, {class: "form-control"}) %>
                   </div>
 
-                  <div class="form-group">
 
-                      <label class="filter-col" style="margin-right:0;" for="pref-perpage">Origine paternelle </label>
-                    <%= f.select(:q4_cont, options_for_select([['Peu importe', ''],['Arabe moyen-orient', 'arabe et moyen orient'], ['maghrebine', 'maghrebine'],  ['africaine', 'africaine'], ['antillaise', 'antillaise'], ['européenne', 'européenne'], ['autres', 'autres']]), {}, {class: "form-control"}) %>
 
-                  </div>
-                  <div class="form-group">
 
-                    <label class="filter-col" style="margin-right:0;" for="pref-perpage">situation matrimoniale </label>
-                    <%= f.select(:q5_cont, options_for_select([['Peu importe', ''],['célibataire jamais marié', 'célibataire jamais marié'], ['divorcé sans enfants', 'divorcé sans enfants'], ['divorcé avec enfant', 'divorcé avec enfant'], ['marié', 'marié']]), {}, {class: "form-control"}) %>
-
-                  </div>
 
 
 
@@ -136,10 +117,15 @@
 
                 <br><br>
 
-                  <%= f.submit "Chercher", class:' btn btn-default glyphicon glyphicon-record' %>
+                <div class="row">
+                  <div class="col-md-3 col-md-offset-1">
+                    <%= f.submit "Chercher", class:' btn btn-primary glyphicon glyphicon-record' %>
+                  </div>
+                </div>
 
 
                 </div>
+
               </form>
             </div>
           </div>
