@@ -350,9 +350,7 @@
 
         <script>
 
-
-
-
+            $(document).ready(function () {
                 $('div#pourHomme').show();
                 $('div#pourFemme').hide();
 
@@ -376,7 +374,7 @@
 
 
         <div class="col-sm-6 form-group">
-           <%= f.submit "Créer un compte", class: 'btn btn-primary submit' %>
+           <%= f.submit "Créer un compte", class: 'btn btn-primary' %>
         </div>
 <% end %>
 </div>
@@ -386,4 +384,3 @@
 </div>
 
   <br>
-
