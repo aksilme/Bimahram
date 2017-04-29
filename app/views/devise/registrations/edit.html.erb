@@ -165,8 +165,9 @@
 
             </div>
           </div>
+          <% if current_user.genre == 'homme' %>
           <div class="col-sm-12" id="photoHomme">
-              <% if current_user.genre == 'homme' %>
+
                 <div class="row">
                   <div class="col-sm-6 form-group">
                     <p>Photo de profil (extensions permises: jpg ,jpeg, png)</b></p>
@@ -184,9 +185,95 @@
 
 
                 </div>
-              <% else %>
-              <% end %>
+
           </div>
+          <% else %>
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-6 form-group" id="pourFemme">
+                    <p>Votre avatar</p>
+                    <%= f.select(:avatarfemme, options_for_select([['Avatar1', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/5_frllcw.jpg'],
+                                                                   ['Avatar2', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/2_kjkrrl.jpg'],
+                                                                   ['Avatar3', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/3_wyhcvp.jpg'], ['Avatar4', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/4_opdqyy.jpg'],['Avatar5', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/5_frllcw.jpg'],
+                                                                   ['Avatar6', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/6_xuf9h8.jpg'], ['Avatar7', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/7_bgrubx.jpg'],['Avatar8', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/8_ehzvrx.jpg'],
+                                                                   ['Avatar9', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/9_o2jsbe.jpg'], ['Avatar10', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/10_zneqer.jpg'],['Avatar11', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/11_jsontd.jpg'],
+                                                                   ['Avatar12', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/12_qjom3q.jpg'],['Avatar13', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/13_kxsfl0.jpg'],['Avatar14', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/14_uafscg.jpg'],
+                                                                   ['Avatar15', 'http://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/15_ukxsfe.jpg'],['Avatar16', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/16_juxj5f.jpg'],['Avatar17', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764140/17_rnaluk.jpg'],
+                                                                   ['Avatar18', 'https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/18_s4ga4g.jpg'],['Avatar19', 'http://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/19_efrpsk.jpg'],['Avatar20', 'http://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764140/20_zktb31.jpg']
+                                                                  ]), {}, {class: "form-control"}) %>
+
+                  </div>
+
+                  <div class="col-sm-6 form-group" id="pourFemme">
+                    <p>Choisissez parmi les avatars suivant</p>
+                    <div class="row">
+
+                      1: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/5_frllcw.jpg" style="width: 70px; height:70px">
+                      2: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/2_kjkrrl.jpg" style="width: 70px; height:70px">
+                      3: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/3_wyhcvp.jpg" style="width: 70px; height:70px">
+
+
+                    </div>
+                    <div class="row" style="border-top: 1px solid white;">
+
+                      4: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/4_opdqyy.jpg" style="width: 70px; height:70px">
+                      5: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/5_frllcw.jpg" style="width: 70px; height:70px">
+                      6: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764138/6_xuf9h8.jpg" style="width: 70px; height:70px">
+
+
+                    </div>
+                    <div class="row" style="border-top: 1px solid white;">
+
+                      7: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/7_bgrubx.jpg" style="width: 70px; height:70px">
+                      8: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/8_ehzvrx.jpg" style="width: 70px; height:70px">
+                      9: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/9_o2jsbe.jpg" style="width: 70px; height:70px">
+
+
+                    </div>
+
+                    <div class="row" style="border-top: 1px solid white;margin-left: -23px;">
+
+                      10: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/10_zneqer.jpg" style="width: 70px; height:70px">
+                      11: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/11_jsontd.jpg" style="width: 70px; height:70px">
+                      12:<img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/12_qjom3q.jpg" style="width: 70px; height:70px">
+
+
+                    </div>
+                    <div class="row" style="border-top: 1px solid white;margin-left: -23px;">
+
+                      13: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/13_kxsfl0.jpg" style="width: 70px; height:70px">
+                      14: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/14_uafscg.jpg" style="width: 70px; height:70px">
+                      15:<img src="http://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/15_ukxsfe.jpg" style="width: 70px; height:70px">
+
+
+                    </div>
+                    <div class="row" style="border-top: 1px solid white;margin-left: -23px;">
+
+                      16: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/16_juxj5f.jpg" style="width: 70px; height:70px">
+                      17: <img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764140/17_rnaluk.jpg" style="width: 70px; height:70px">
+                      18:<img src="https://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/18_s4ga4g.jpg" style="width: 70px; height:70px">
+
+
+                    </div>
+                    <div class="row" style="border-top: 1px solid white;margin-left: -23px;">
+
+                      19: <img src="http://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764139/19_efrpsk.jpg" style="width: 70px; height:70px">
+                      20: <img src="http://res.cloudinary.com/bimahram-herokuapp-com/image/upload/v1491764140/20_zktb31.jpg" style="width: 70px; height:70px">
+
+
+
+                    </div>
+
+                  </div>
+
+
+
+
+
+
+                </div>
+              </div>
+          <% end %>
 
 
 
