@@ -63,7 +63,7 @@
         <div class="col-sm-6">
           <ul>
 
-            <% User.order(id: :asc).limit(5).where(genre: 'femme').each do |d| %>
+            <% User.where(genre: 'femme').each do |d| %>
                 <% if d.current_sign_in_at.to_i > d.last_sign_out_at.to_i %>
                     <li><a href="/users/<%= d.id %>"><%= d.username %></a>, <%= d.birthday %>, <%= d.city %>  </li>
                 <% end%>
