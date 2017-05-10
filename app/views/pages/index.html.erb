@@ -36,14 +36,14 @@
       <div class="panel-body">
         <div class="col-sm-6" class="font-size:8px;">
           <ul>
-          <% User.order(id: :asc).limit(10).where(genre: 'femme').order(created_at: :desc).each do |d| %>
+          <% User.order(id: :asc).limit(10).where(genre: 'femme').order(created_at: :asc).each do |d| %>
              <li class="font-size: 12px;"><a href="/users/<%= d.id %>"><%= d.username %></a>, <%= d.birthday %>, <%= d.city %>  </li>
           <% end %>
           </ul>
         </div>
         <div class="col-sm-6">
           <ul>
-            <% User.order(id: :asc).limit(10).where(genre: 'homme').order(created_at: :desc).each do |d| %>
+            <% User.order(id: :asc).limit(10).where(genre: 'homme').order(created_at: :asc).each do |d| %>
                 <li><a href="/users/<%= d.id %>"><%= d.username %></a>, <%= d.birthday %>, <%= d.city %>  </li>
             <% end %>
           </ul>
